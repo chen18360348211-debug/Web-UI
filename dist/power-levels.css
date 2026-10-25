@@ -1,0 +1,66 @@
+/* Original Figma 551:3474 geometry. The white frame 551:3475 supplies each
+   mask cell, revealing the original live text and separate artwork together. */
+#early-access .power-level-reveal {
+  position: absolute;
+  left: 0;
+  top: 314px;
+  width: 1920px;
+  height: 925px;
+  background: var(--page-background);
+  view-timeline-name: --power-levels;
+  view-timeline-axis: block;
+}
+#early-access .power-pixel-definitions {
+  position: absolute;
+  pointer-events: none;
+}
+#early-access .power-level-art {
+  position: absolute;
+  inset: 0;
+  background: var(--page-background);
+}
+#early-access .power-level-source {
+  position: absolute;
+  left: 0;
+  top: -314px;
+  width: 1920px;
+  height: 1239px;
+}
+
+/* Progressive enhancement: unsupported timelines and reduced motion retain
+   the complete static design. Each block switches once, with no flashing,
+   fades, timers, wheel interception, or added scroll distance. */
+@supports (animation-timeline: view()) and (mask-image: url("#power-level-pixel-mask")) {
+  @media (prefers-reduced-motion: no-preference) {
+    #early-access .power-level-reveal::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("assets/figma/power-level-white/551-3475.png") center / 100% 100% no-repeat;
+      animation: power-white-finish 1s steps(1, end) both;
+      animation-timeline: --power-levels;
+      animation-range: entry 88.7% entry 89.5%;
+    }
+    #early-access .power-level-art {
+      mask-image: url("#power-level-pixel-mask");
+      mask-repeat: no-repeat;
+    }
+    #early-access .power-pixel {
+      animation: power-pixel-reveal 1s steps(1, end) both;
+      animation-timeline: --power-levels;
+      animation-range: entry var(--pixel-entry) entry var(--pixel-end);
+    }
+    #early-access .power-pixel[data-start-visible] {
+      animation: none;
+      opacity: 1;
+    }
+  }
+}
+@keyframes power-pixel-reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes power-white-finish {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

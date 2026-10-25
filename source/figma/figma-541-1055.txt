@@ -1,0 +1,36 @@
+const assetPathPrefix = "assets/figma/efd3d2e8-3e79-4a3e-b596-dfe936797334";
+const imgFrame427324242 = `${assetPathPrefix}/d177e.svg`;
+const imgFrame427324243 = `${assetPathPrefix}/c4ddf.svg`;
+const imgLine70 = `${assetPathPrefix}/f9b7d.svg`;
+
+export default function Component() {
+  return (
+    <div className="bg-[#1a1a1a] relative size-full" data-node-id="541:1055" data-name="信息播报">
+      <div className="absolute left-[376px] size-[16px] top-[16px]" data-node-id="541:1056">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame427324242} />
+      </div>
+      <div className="absolute flex items-center justify-center left-[1528px] size-[16px] top-[16px]" data-node-id="541:1058">
+        <div className="-scale-y-100 flex-none rotate-180">
+          <div className="relative size-[16px]">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame427324243} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex gap-[16px] items-center left-[723.25px] top-[10px]" data-node-id="541:1060">
+        <p className="[word-break:break-word] capitalize font-['Barlow:Medium'] leading-[1.3] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap" data-node-id="541:1061">
+          Fitness to be NO.1 All-round home fitness space solution
+        </p>
+        <div className="flex h-[28px] items-center justify-center relative shrink-0 w-0" data-node-id="541:1062">
+          <div className="flex-none rotate-90">
+            <div className="h-0 relative w-[28px]">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <img alt="" className="block max-w-none size-full" src={imgLine70} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="[word-break:break-word] capitalize font-['Barlow:Medium'] leading-[1.3] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap" data-node-id="541:1063">{`Learn More >>`}</p>
+      </div>
+    </div>
+  );
+}

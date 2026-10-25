@@ -1,0 +1,279 @@
+const assetPathPrefix = "assets/figma/618f766c-0076-43a1-8ed9-316cec61fb35";
+const img1 = `${assetPathPrefix}/ffdf1.png`;
+const imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1 = `${assetPathPrefix}/35ca3.png`;
+const imgFrame2364 = `${assetPathPrefix}/0fcc0.svg`;
+const imgTab1Selected = `${assetPathPrefix}/12a77.svg`;
+
+export default function Component() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="541:1931" data-name="主推图片">
+      <div className="absolute h-[1084px] left-0 top-[-4px] w-[1920px]" data-node-id="541:1932" data-name="主推产品 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img1} />
+      </div>
+      <div className="absolute bg-gradient-to-t border border-[rgba(167,237,208,0)] border-solid from-black h-[467px] left-[340px] overflow-clip to-[rgba(0,0,0,0)] top-[528px] w-[576px]" data-node-id="541:1933">
+        <div className="absolute content-stretch flex flex-col gap-[52px] items-start left-[23px] top-[102px] w-[528px]" data-node-id="541:1934">
+          <div className="content-stretch flex flex-col gap-[14px] items-start relative shrink-0 w-full" data-node-id="541:1935">
+            <div className="content-stretch flex gap-[14px] items-center relative shrink-0 w-full" data-node-id="541:1936">
+              <div className="border-[#fff1a0] border-[1.6px] border-solid content-stretch flex flex-col items-start overflow-clip px-[20px] py-[16px] relative shrink-0 w-[257px]" data-node-id="541:1937">
+                <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:1938">
+                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:1939">
+                    <div className="relative shrink-0 size-[18px]" data-node-id="541:1940">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2364} />
+                    </div>
+                    <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:1942">
+                      <div className="absolute left-0 size-[40px] top-0" data-node-id="541:1943" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:1944">
+                    <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:1945">
+                      2-in-1 Leg Press Hack Squat Machine Combo DD10
+                    </p>
+                    <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:1946">
+                      <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:1947">
+                        ＄749.99
+                      </p>
+                      <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:1948">
+                        ＄799.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="border-[#f0f0f0] border-[0.6px] border-solid content-stretch flex flex-col items-start overflow-clip px-[20px] py-[16px] relative shrink-0 w-[257px]" data-node-id="541:1949">
+                <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:1950">
+                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:1951">
+                    <div className="border-[#f0f0f0] border-[0.75px] border-solid relative rounded-[0.75px] shrink-0 size-[18px]" data-node-id="541:1952" />
+                    <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:1953">
+                      <div className="absolute left-0 size-[40px] top-0" data-node-id="541:1954" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:1955">
+                    <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:1956">
+                      2-in-1 Leg Press Hack Squat Machine Combo DD10
+                    </p>
+                    <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:1957">
+                      <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:1958">
+                        ＄749.99
+                      </p>
+                      <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:1959">
+                        ＄799.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[14px] items-center relative shrink-0 w-full" data-node-id="541:1960">
+              <div className="border-[#f0f0f0] border-[0.6px] border-solid content-stretch flex flex-col items-start overflow-clip px-[20px] py-[16px] relative shrink-0 w-[257px]" data-node-id="541:1961">
+                <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:1962">
+                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:1963">
+                    <div className="border-[#f0f0f0] border-[0.75px] border-solid relative rounded-[0.75px] shrink-0 size-[18px]" data-node-id="541:1964" />
+                    <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:1965">
+                      <div className="absolute left-0 size-[40px] top-0" data-node-id="541:1966" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:1967">
+                    <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:1968">
+                      2-in-1 Leg Press Hack Squat Machine Combo DD10
+                    </p>
+                    <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:1969">
+                      <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:1970">
+                        ＄749.99
+                      </p>
+                      <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:1971">
+                        ＄799.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="border-[#f0f0f0] border-[0.6px] border-solid content-stretch flex flex-col items-start overflow-clip px-[20px] py-[16px] relative shrink-0 w-[257px]" data-node-id="541:1972">
+                <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:1973">
+                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:1974">
+                    <div className="border-[#f0f0f0] border-[0.75px] border-solid relative rounded-[0.75px] shrink-0 size-[18px]" data-node-id="541:1975" />
+                    <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:1976">
+                      <div className="absolute left-0 size-[40px] top-0" data-node-id="541:1977" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:1978">
+                    <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:1979">
+                      2-in-1 Leg Press Hack Squat Machine Combo DD10
+                    </p>
+                    <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:1980">
+                      <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:1981">
+                        ＄749.99
+                      </p>
+                      <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:1982">
+                        ＄799.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="541:1983">
+            <div className="[word-break:break-word] content-stretch flex gap-[9px] items-center justify-center leading-[1.3] relative shrink-0 whitespace-nowrap" data-node-id="541:1984">
+              <p className="bg-clip-text bg-gradient-to-b font-['Roboto:ExtraBold'] font-extrabold from-[#fff1a0] relative shrink-0 text-[32px] text-[transparent] to-[#c99b36] via-[#f5d264] via-[45%]" data-node-id="541:1985" style={{ fontVariationSettings: '"wdth" 100' }}>
+                ＄2,469.99
+              </p>
+              <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Roboto:Regular'] font-normal line-through relative shrink-0 text-[#ccc] text-[20px]" data-node-id="541:1986" style={{ fontVariationSettings: '"wdth" 100' }}>
+                ＄2449.99
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[8.163px] h-[48px] items-center justify-center overflow-clip px-[22.857px] py-[16.327px] relative shrink-0 w-full" data-node-id="541:1987">
+              <div className="absolute inset-[0_-0.87%_0.01%_-0.68%]" data-node-id="541:1988" data-name="tab-1-selected">
+                <div className="absolute inset-[-5.54%_-0.5%_-0.69%_-0.5%]">
+                  <img alt="" className="block max-w-none size-full" src={imgTab1Selected} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#0f0f0f] text-[24px] text-center whitespace-nowrap" data-node-id="541:1994">
+                SHOP NOW
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-gradient-to-t border border-[rgba(167,237,208,0)] border-solid from-black h-[467px] left-[1030px] overflow-clip to-[rgba(0,0,0,0)] top-[528px] w-[576px]" data-node-id="541:1995">
+        <div className="absolute content-stretch flex flex-col gap-[52px] items-start left-[23px] top-[102px] w-[528px]" data-node-id="541:1996">
+          <div className="content-stretch flex flex-col gap-[14px] items-start relative shrink-0 w-full" data-node-id="541:1997">
+            <div className="content-stretch flex gap-[14px] items-center relative shrink-0 w-full" data-node-id="541:1998">
+              <div className="border-[#fff1a0] border-[1.6px] border-solid content-stretch flex flex-col items-start overflow-clip px-[20px] py-[16px] relative shrink-0 w-[257px]" data-node-id="541:1999">
+                <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:2000">
+                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:2001">
+                    <div className="relative shrink-0 size-[18px]" data-node-id="541:2002">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2364} />
+                    </div>
+                    <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:2004">
+                      <div className="absolute left-0 size-[40px] top-0" data-node-id="541:2005" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:2006">
+                    <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:2007">
+                      2-in-1 Leg Press Hack Squat Machine Combo DD10
+                    </p>
+                    <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:2008">
+                      <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:2009">
+                        ＄749.99
+                      </p>
+                      <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:2010">
+                        ＄799.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="border-[#f0f0f0] border-[0.6px] border-solid content-stretch flex flex-col items-start overflow-clip px-[20px] py-[16px] relative shrink-0 w-[257px]" data-node-id="541:2011">
+                <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:2012">
+                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:2013">
+                    <div className="border-[#f0f0f0] border-[0.75px] border-solid relative rounded-[0.75px] shrink-0 size-[18px]" data-node-id="541:2014" />
+                    <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:2015">
+                      <div className="absolute left-0 size-[40px] top-0" data-node-id="541:2016" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:2017">
+                    <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:2018">
+                      2-in-1 Leg Press Hack Squat Machine Combo DD10
+                    </p>
+                    <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:2019">
+                      <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:2020">
+                        ＄749.99
+                      </p>
+                      <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:2021">
+                        ＄799.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[14px] items-center relative shrink-0 w-full" data-node-id="541:2022">
+              <div className="border-[#f0f0f0] border-[0.6px] border-solid content-stretch flex flex-col items-start overflow-clip px-[20px] py-[16px] relative shrink-0 w-[257px]" data-node-id="541:2023">
+                <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:2024">
+                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:2025">
+                    <div className="border-[#f0f0f0] border-[0.75px] border-solid relative rounded-[0.75px] shrink-0 size-[18px]" data-node-id="541:2026" />
+                    <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:2027">
+                      <div className="absolute left-0 size-[40px] top-0" data-node-id="541:2028" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:2029">
+                    <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:2030">
+                      2-in-1 Leg Press Hack Squat Machine Combo DD10
+                    </p>
+                    <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:2031">
+                      <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:2032">
+                        ＄749.99
+                      </p>
+                      <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:2033">
+                        ＄799.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="border-[#f0f0f0] border-[0.6px] border-solid content-stretch flex flex-col items-start overflow-clip px-[20px] py-[16px] relative shrink-0 w-[257px]" data-node-id="541:2034">
+                <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:2035">
+                  <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:2036">
+                    <div className="border-[#f0f0f0] border-[0.75px] border-solid relative rounded-[0.75px] shrink-0 size-[18px]" data-node-id="541:2037" />
+                    <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:2038">
+                      <div className="absolute left-0 size-[40px] top-0" data-node-id="541:2039" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+                        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:2040">
+                    <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:2041">
+                      2-in-1 Leg Press Hack Squat Machine Combo DD10
+                    </p>
+                    <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:2042">
+                      <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:2043">
+                        ＄749.99
+                      </p>
+                      <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:2044">
+                        ＄799.99
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="541:2045">
+            <div className="[word-break:break-word] content-stretch flex gap-[9px] items-center justify-center leading-[1.3] relative shrink-0 whitespace-nowrap" data-node-id="541:2046">
+              <p className="bg-clip-text bg-gradient-to-b font-['Roboto:ExtraBold'] font-extrabold from-[#fff1a0] relative shrink-0 text-[32px] text-[transparent] to-[#c99b36] via-[#f5d264] via-[45%]" data-node-id="541:2047" style={{ fontVariationSettings: '"wdth" 100' }}>
+                ＄2,469.99
+              </p>
+              <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Roboto:Regular'] font-normal line-through relative shrink-0 text-[#ccc] text-[20px]" data-node-id="541:2048" style={{ fontVariationSettings: '"wdth" 100' }}>
+                ＄2449.99
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[8.163px] h-[48px] items-center justify-center overflow-clip px-[22.857px] py-[16.327px] relative shrink-0 w-full" data-node-id="541:2049">
+              <div className="absolute inset-[0_-0.87%_0.01%_-0.68%]" data-node-id="541:2050" data-name="tab-1-selected">
+                <div className="absolute inset-[-5.54%_-0.5%_-0.69%_-0.5%]">
+                  <img alt="" className="block max-w-none size-full" src={imgTab1Selected} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#0f0f0f] text-[24px] text-center whitespace-nowrap" data-node-id="541:2056">
+                SHOP NOW
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

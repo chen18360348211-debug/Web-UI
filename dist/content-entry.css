@@ -1,0 +1,32 @@
+/* The observed layout marker stays still while its visual rises into place. */
+.content-entry-gate {
+  position: absolute;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* CUSTOMIZE keeps its original scroll-driven animation on the outer copy. */
+.content-entry-visual {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-content-entry-state="pending"]:not([data-content-entry-inner]),
+  [data-content-entry-state="pending"] > .content-entry-visual {
+    opacity: 0;
+    translate: 0 30px;
+  }
+
+  [data-content-entry-state="running"]:not([data-content-entry-inner]),
+  [data-content-entry-state="running"] > .content-entry-visual {
+    animation: content-enter 1000ms cubic-bezier(.25, .1, .25, 1) both;
+    animation-delay: var(--content-entry-delay, 0ms);
+  }
+}
+
+@keyframes content-enter {
+  from { opacity: 0; translate: 0 30px; }
+  to { opacity: 1; translate: 0 0; }
+}

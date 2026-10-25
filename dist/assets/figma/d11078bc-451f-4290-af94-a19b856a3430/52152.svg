@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="388" height="160" viewBox="0 0 388 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="stroke0_0_8" fill="white">
+<path d="M375.368 12.6316H388V147.368H375.368V160H12.6316V147.368H0V12.6316H12.6316V0L375.368 0V12.6316Z"/>
+</mask>
+<path id="Exclude" d="M375.368 12.6316H388V147.368H375.368V160H12.6316V147.368H0V12.6316H12.6316V0L375.368 0V12.6316Z" stroke-width="3.2" stroke="#A7EDD0" mask="url(#stroke0_0_8)"/>
+</svg>

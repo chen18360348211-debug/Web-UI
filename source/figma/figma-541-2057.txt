@@ -1,0 +1,96 @@
+const assetPathPrefix = "assets/figma/d11078bc-451f-4290-af94-a19b856a3430";
+const imgImage89 = `${assetPathPrefix}/310bd.png`;
+const imgImage93 = `${assetPathPrefix}/de98c.png`;
+const imgRectangle64 = `${assetPathPrefix}/65260.png`;
+const img942 = `${assetPathPrefix}/4c963.png`;
+const imgFrame427324265 = `${assetPathPrefix}/47cbc.svg`;
+const imgExclude = `${assetPathPrefix}/52152.svg`;
+
+export default function Frame427324343() {
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-center relative size-full" data-node-id="541:2057">
+      <div className="bg-black h-[960px] overflow-clip relative shrink-0 w-full" data-node-id="541:2058" data-name="抽奖">
+        <div className="absolute h-[860px] left-[100px] top-[100.13px] w-[1720px]" data-node-id="541:2059" data-name="image 89">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage89} />
+        </div>
+        <div className="absolute h-[960px] left-[-3px] top-[0.13px] w-[1941px]" data-node-id="541:2060" data-name="image 93">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage93} />
+        </div>
+        <div className="absolute h-[180px] left-0 top-[-1px] w-[1921px]" data-node-id="541:2061">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle64} />
+        </div>
+        <div className="absolute content-stretch flex gap-[308px] items-center justify-center left-[159px] top-[66px]" data-node-id="541:2062">
+          <p className="[word-break:break-word] font-['Jersey_10:Regular'] font-normal leading-[normal] relative shrink-0 text-[80px] text-white w-[1055px]" data-node-id="541:2063" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+            WEEKLY BONUS DROP $500 GIFT CARD
+          </p>
+          <div className="content-stretch flex gap-[10px] h-[47px] items-center justify-center px-[37px] py-[10px] relative shrink-0 w-[237px]" data-node-id="541:2064">
+            <div className="absolute inset-[-0.65%_-0.13%]">
+              <img alt="" className="block max-w-none size-full" src={imgFrame427324265} />
+            </div>
+            <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#ebebeb] text-[24px] text-center uppercase whitespace-nowrap" data-node-id="541:2068">
+              PRESS START TO ENTER
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[48px] items-start leading-[0] relative shrink-0 w-[1601.5px]" data-node-id="541:2069">
+        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="541:2070">
+          <p className="[word-break:break-word] col-1 font-['Barlow:SemiBold'] leading-[1.3] ml-[127px] mt-[116px] not-italic relative row-1 text-[26px] text-white whitespace-nowrap" data-node-id="541:2071">
+            Follow Us on Instagram
+          </p>
+          <div className="[word-break:break-word] col-1 font-['Barlow:SemiBold'] ml-[682px] mt-[116px] not-italic relative row-1 text-[26px] text-white whitespace-nowrap" data-node-id="541:2072">
+            <p className="leading-[1.3] mb-0 whitespace-pre">{`One Winner Announced `}</p>
+            <p className="leading-[1.3] whitespace-pre">Every Friday</p>
+          </div>
+          <div className="[word-break:break-word] col-1 font-['Barlow:SemiBold'] ml-[1211px] mt-[116px] not-italic relative row-1 text-[26px] text-white whitespace-nowrap" data-node-id="541:2073">
+            <p className="leading-[1.3] mb-0 whitespace-pre">{`DM us within 24 hours to `}</p>
+            <p className="leading-[1.3] whitespace-pre">claim your $500 gift card</p>
+          </div>
+          <div className="col-1 h-[116px] ml-0 mt-0 relative row-1 w-[1600px]" data-node-id="541:2074" data-name="图层 94 2">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img942} />
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[16px] items-center relative shrink-0 w-full" data-node-id="541:2075">
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="541:2076">
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] ml-[63px] mt-[19px] not-italic relative row-1 text-[92px] text-[transparent] to-[#9ff7d4] whitespace-nowrap" data-node-id="541:2077">
+              WEEK 01
+            </p>
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] ml-[63px] mt-[106px] not-italic relative row-1 text-[26px] text-[transparent] to-[#c99b36] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:2078">{`NOV 6 `}</p>
+            <div className="col-1 h-[160px] ml-0 mt-0 relative row-1 w-[388px]" data-node-id="541:2079" data-name="Exclude">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgExclude} />
+            </div>
+          </div>
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="541:2080">
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] ml-[63px] mt-[19px] not-italic relative row-1 text-[92px] text-[transparent] to-[#9ff7d4] whitespace-nowrap" data-node-id="541:2081">
+              WEEK 02
+            </p>
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] ml-[63px] mt-[106px] not-italic relative row-1 text-[26px] text-[transparent] to-[#c99b36] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:2082">{`NOV 13 `}</p>
+            <div className="col-1 h-[160px] ml-0 mt-0 relative row-1 w-[388px]" data-node-id="541:2083" data-name="Exclude">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgExclude} />
+            </div>
+          </div>
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="541:2084">
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] ml-[63px] mt-[19px] not-italic relative row-1 text-[92px] text-[transparent] to-[#9ff7d4] whitespace-nowrap" data-node-id="541:2085">
+              WEEK 03
+            </p>
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] ml-[63px] mt-[106px] not-italic relative row-1 text-[26px] text-[transparent] to-[#c99b36] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:2086">{`NOV 20 `}</p>
+            <div className="col-1 h-[160px] ml-0 mt-0 relative row-1 w-[388px]" data-node-id="541:2087" data-name="Exclude">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgExclude} />
+            </div>
+          </div>
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="541:2088">
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] ml-[63px] mt-[19px] not-italic relative row-1 text-[92px] text-[transparent] to-[#9ff7d4] whitespace-nowrap" data-node-id="541:2089">
+              WEEK 04
+            </p>
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] ml-[63px] mt-[106px] not-italic relative row-1 text-[26px] text-[transparent] to-[#c99b36] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:2090">
+              NOV 27
+            </p>
+            <div className="col-1 h-[160px] ml-0 mt-0 relative row-1 w-[388px]" data-node-id="541:2091" data-name="Exclude">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgExclude} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

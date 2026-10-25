@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="108" height="104" viewBox="0 0 108 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="tab-surface-2">
+<path d="M6.12571 0H102.674V7.57895H108V98.021H102.674V104H6.12571V98.021H0V7.57895H6.12571V0Z" fill="#0B1B2A" fill-opacity="0.62"/>
+<mask id="stroke0_0_4" fill="white">
+<path d="M6.12571 0H102.674V7.57895H108V98.021H102.674V104H6.12571V98.021H0V7.57895H6.12571V0Z"/>
+</mask>
+<path d="M6.12571 0H102.674V7.57895H108V98.0211H102.674V104H6.12571V98.0211H0V7.57895H6.12571V0Z" stroke-width="4" stroke="#A7EDD0" mask="url(#stroke0_0_4)"/>
+</g>
+</svg>

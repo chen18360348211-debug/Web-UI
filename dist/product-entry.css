@@ -1,0 +1,80 @@
+/* Keep the original card as the stationary hover target. This scene is only
+   observed before entry; it is unobserved before moving and preserves 3D. */
+.product-card-entry-scene {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+
+/* Layout-only visibility targets share scene movement, never face rotation. */
+.product-entry-gate {
+  position: absolute;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-product-entry] [data-product-entry-part="image"] {
+    --product-part-rise: 18px;
+    --product-part-duration: 1000ms;
+    --product-part-delay: 0ms;
+  }
+
+  [data-product-entry] [data-product-entry-part="title"] {
+    --product-part-rise: 24px;
+    --product-part-duration: 1000ms;
+    --product-part-delay: 500ms;
+  }
+
+  [data-product-entry] [data-product-entry-part="price"] {
+    --product-part-rise: 20px;
+    --product-part-duration: 1000ms;
+    --product-part-delay: 650ms;
+  }
+
+  [data-product-entry] [data-product-entry-part="button"] {
+    --product-part-rise: 16px;
+    --product-part-duration: 1000ms;
+    --product-part-delay: 650ms;
+  }
+
+  .product-card-entry-scene[data-product-scene-state="pending"] {
+    translate: 0 48px;
+  }
+
+  [data-product-entry-part][data-product-part-state="pending"] {
+    opacity: 0;
+    translate: 0 var(--product-part-rise);
+  }
+
+  .product-card-entry-scene[data-product-scene-state="running"] {
+    /* Keep the white panel and border opaque while the tile rises. */
+    animation: product-card-enter 1000ms cubic-bezier(.39, .575, .565, 1) both;
+    animation-delay: 0ms;
+  }
+
+  [data-product-entry-part][data-product-part-state="running"] {
+    animation: product-part-enter var(--product-part-duration) cubic-bezier(.5, 1, .89, 1) both;
+    animation-delay: calc(var(--product-entry-delay, 0ms) + var(--product-part-delay));
+  }
+
+  /* Every column starts its image with the card, without a stagger delay. */
+  [data-product-entry-part="image"][data-product-part-state="running"] {
+    animation-delay: 0ms;
+  }
+
+  /* Moving CTA artwork must not extend the original card's hit rectangle. */
+  [data-product-cart]:is([data-product-part-state="pending"], [data-product-part-state="running"]) {
+    pointer-events: none;
+  }
+}
+
+@keyframes product-card-enter {
+  from { translate: 0 48px; }
+  to { translate: 0 0; }
+}
+
+@keyframes product-part-enter {
+  from { opacity: 0; translate: 0 var(--product-part-rise); }
+  to { opacity: 1; translate: 0 0; }
+}

@@ -1,0 +1,17 @@
+const assetPathPrefix = "assets/figma/a40dd691-8d56-4f0f-98ef-8273b5bdd5ce";
+const imgTab1Selected = `${assetPathPrefix}/4be99.svg`;
+
+export default function Tab() {
+  return (
+    <div className="content-stretch flex gap-[8.421px] items-center justify-center px-[23.579px] py-[16.842px] relative size-full" data-node-id="606:1649" data-name="Tab 选中状态悬停">
+      <div className="absolute inset-[0_-0.87%_0_-0.68%]" data-node-id="606:1650" data-name="tab-1-selected">
+        <div className="absolute inset-[-5.78%_-1.36%_-0.72%_-1.36%]">
+          <img alt="" className="block max-w-none size-full" src={imgTab1Selected} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#0f0f0f] text-[24.758px] text-center whitespace-nowrap" data-node-id="606:1656">
+        Packages
+      </p>
+    </div>
+  );
+}

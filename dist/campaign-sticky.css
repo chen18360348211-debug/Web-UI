@@ -1,0 +1,70 @@
+/* The absolutely positioned track starts at Figma y=912 and ends with the
+   artboard. It neither adds document height nor intercepts the content below. */
+.campaign-sticky-track {
+  --campaign-slide-duration: 300ms;
+  position: absolute;
+  bottom: 0;
+  z-index: 20;
+  pointer-events: none;
+  overflow-anchor: none;
+}
+
+/* Keep the root viewport as the scroll container: this track has no overflow
+   or transform, and #design-canvas deliberately uses overflow:clip. Native
+   sticky positioning follows its existing CSS zoom without scroll listeners. */
+.campaign-sticky-track > #campaign-navigation {
+  position: sticky;
+  top: 0;
+  pointer-events: auto;
+  visibility: visible;
+  transition: visibility 0s linear;
+}
+
+/* The sentinel's bottom edge is exactly the original navigation top. The
+   sliding artwork cannot move this observer target or its sticky boundary. */
+.campaign-sticky-sentinel {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 1px;
+  pointer-events: none;
+}
+
+#campaign-navigation > [data-node-id="541:1215"] {
+  translate: 0 0;
+  transition: translate var(--campaign-slide-duration) cubic-bezier(.22, .61, .36, 1);
+}
+
+.campaign-sticky-track.campaign-entering > #campaign-navigation {
+  pointer-events: none;
+}
+
+.campaign-sticky-track.campaign-entering > #campaign-navigation > [data-node-id="541:1215"] {
+  translate: 0 -100%;
+  transition: none;
+}
+
+/* The marker only describes the two original section bounds. It does not
+   paint, intercept input, or inherit the animated scene's transform. */
+.featured-navigation-region {
+  position: absolute;
+  pointer-events: none;
+}
+
+.campaign-sticky-track.campaign-hidden > #campaign-navigation {
+  visibility: hidden;
+  pointer-events: none;
+  transition-delay: var(--campaign-slide-duration);
+}
+
+.campaign-sticky-track.campaign-hidden > #campaign-navigation > [data-node-id="541:1215"] {
+  translate: 0 -100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .campaign-sticky-track { --campaign-slide-duration: 0ms; }
+  .campaign-sticky-track.campaign-entering:not(.campaign-hidden) > #campaign-navigation > [data-node-id="541:1215"] {
+    translate: 0 0;
+  }
+}

@@ -1,0 +1,252 @@
+const assetPathPrefix = "assets/figma/cee31e19-7d20-4047-8cbf-567a1b2bd49b";
+const imgFacebookOne1 = `${assetPathPrefix}/791a2.svg`;
+const imgTuite1 = `${assetPathPrefix}/683b1.svg`;
+const imgInstagram1 = `${assetPathPrefix}/98f1c.svg`;
+const imgYoutube1 = `${assetPathPrefix}/e9bce.svg`;
+const imgFrame = `${assetPathPrefix}/c9b16.svg`;
+const imgTiktok1 = `${assetPathPrefix}/29183.svg`;
+const img1 = `${assetPathPrefix}/29447.svg`;
+const imgLine14 = `${assetPathPrefix}/0335e.svg`;
+
+export default function Frame2087() {
+  return (
+    <div className="bg-[#0a0a0a] relative size-full" data-node-id="541:1064">
+      <div className="absolute content-stretch flex flex-col gap-[64px] items-start left-[80px] top-[92px] w-[1760px]" data-node-id="541:1065">
+        <div className="content-stretch flex h-[281px] items-start justify-between relative shrink-0 w-full" data-node-id="541:1066">
+          <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 w-[428px]" data-node-id="541:1067">
+            <div className="[word-break:break-word] font-['Barlow:SemiBold'] leading-[0] not-italic relative shrink-0 text-[#f7f7f7] text-[32px] whitespace-nowrap" data-node-id="541:1068">
+              <p className="leading-[1.3] mb-0 whitespace-pre">{`Get news and updates `}</p>
+              <p className="leading-[1.3] whitespace-pre">from MIKOLO</p>
+            </div>
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="541:1069">
+              <div className="content-stretch flex gap-[16px] items-center relative shrink-0 w-full" data-node-id="541:1070">
+                <div className="border border-[#999] border-solid h-[52px] overflow-clip relative shrink-0 w-[280px]" data-node-id="541:1071">
+                  <p className="[word-break:break-word] absolute font-['Barlow:Medium'] leading-[1.3] left-[19px] not-italic text-[#ccc] text-[20px] top-[12px] whitespace-nowrap" data-node-id="541:1072">
+                    Email
+                  </p>
+                </div>
+                <div className="bg-[#ff3d00] h-[52px] overflow-clip relative shrink-0 w-[132px]" data-node-id="541:1073">
+                  <p className="[word-break:break-word] absolute font-['Barlow:Medium'] leading-[1.3] left-[calc(50%-33px)] not-italic text-[20px] text-white top-[13px] whitespace-nowrap" data-node-id="541:1074">
+                    Sign up
+                  </p>
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[1.3] not-italic relative shrink-0 text-[#999] text-[14px] w-full" data-node-id="541:1075">{`By signing up you agree to receive updates and marketing messages (e.g. email, social, etc.) from MIKOLO about Meta's existing and future products and services.`}</p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[40px] items-start relative shrink-0 w-[1168px]" data-node-id="541:1076">
+            <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip relative shrink-0 w-[212px]" data-node-id="541:1077">
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="541:1078">
+                <p className="[word-break:break-word] font-['Barlow:SemiBold'] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap" data-node-id="541:1079">
+                  Products
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1080">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1081">
+                  Leg Press Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1082">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1083">
+                  Leg Extension Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1084">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1085">
+                  Hip Thrust Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1086">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1087">
+                  Smith Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1088">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1089">
+                  Multi-gym Station
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1090">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1091">
+                  Back Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1092">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1093">
+                  Bicep Machine
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip relative shrink-0 w-[212px]" data-node-id="541:1094">
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="541:1095">
+                <p className="[word-break:break-word] font-['Barlow:SemiBold'] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap" data-node-id="541:1096">
+                  Products
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1097">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1098">
+                  Leg Press Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1099">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1100">
+                  Leg Extension Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1101">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1102">
+                  Hip Thrust Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1103">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1104">
+                  Smith Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1105">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1106">
+                  Multi-gym Station
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1107">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1108">
+                  Back Machine
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1109">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1110">
+                  Bicep Machine
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip relative shrink-0 w-[212px]" data-node-id="541:1111">
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="541:1112">
+                <p className="[word-break:break-word] font-['Barlow:SemiBold'] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap" data-node-id="541:1113">
+                  Relevant Clause
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1114">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1115">
+                  Terms of Use
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1116">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1117">
+                  Privacy Policy
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1118">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1119">
+                  Refund Policy
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1120">
+                <div className="[word-break:break-word] font-['Barlow:Regular'] leading-[0] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] w-[212px] whitespace-pre-wrap" data-node-id="541:1121">
+                  <p className="leading-[normal] mb-0">{`Do not sell or share `}</p>
+                  <p className="leading-[normal]">my personal information</p>
+                </div>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1122">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1123">
+                  Product Security
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip relative shrink-0 w-[212px]" data-node-id="541:1124">
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="541:1125">
+                <p className="[word-break:break-word] font-['Barlow:SemiBold'] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap" data-node-id="541:1126">
+                  Relevant Clause
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1127">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1128">
+                  Terms of Use
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1129">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1130">
+                  Privacy Policy
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1131">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1132">
+                  Refund Policy
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1133">
+                <div className="[word-break:break-word] font-['Barlow:Regular'] leading-[0] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] w-[212px] whitespace-pre-wrap" data-node-id="541:1134">
+                  <p className="leading-[normal] mb-0">{`Do not sell or share `}</p>
+                  <p className="leading-[normal]">my personal information</p>
+                </div>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1135">
+                <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] whitespace-nowrap" data-node-id="541:1136">
+                  Product Security
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip relative shrink-0 w-[160px]" data-node-id="541:1137">
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="541:1138">
+                <p className="[word-break:break-word] font-['Barlow:SemiBold'] leading-[normal] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap" data-node-id="541:1139">
+                  Contact Us
+                </p>
+              </div>
+              <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="541:1140">
+                <div className="[word-break:break-word] font-['Barlow:Regular'] leading-[0] not-italic relative shrink-0 text-[#8f8f8f] text-[14px] w-[160px] whitespace-pre-wrap" data-node-id="541:1141">
+                  <p className="leading-[normal] mb-0">{`Sign up for new stories `}</p>
+                  <p className="leading-[normal]">{`& personal offers`}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="541:1142">
+          <div className="h-[24px] relative shrink-0 w-[1760px]" data-node-id="541:1143">
+            <div className="absolute content-stretch flex gap-[24px] items-center left-[1496px] top-0" data-node-id="541:1144">
+              <div className="relative shrink-0 size-[24px]" data-node-id="541:1145" data-name="脸书_facebook-one 1">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFacebookOne1} />
+              </div>
+              <div className="relative shrink-0 size-[24px]" data-node-id="541:1148" data-name="tuite 1">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgTuite1} />
+              </div>
+              <div className="relative shrink-0 size-[24px]" data-node-id="541:1150" data-name="instagram 1">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgInstagram1} />
+              </div>
+              <div className="relative shrink-0 size-[24px]" data-node-id="541:1153" data-name="Youtube 1">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgYoutube1} />
+              </div>
+              <div className="relative shrink-0 size-[24px]" data-node-id="541:1156" data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+              </div>
+              <div className="relative shrink-0 size-[24px]" data-node-id="541:1158" data-name="tiktok 1">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgTiktok1} />
+              </div>
+            </div>
+            <div className="absolute h-[20px] left-0 overflow-clip top-0 w-[163.854px]" data-node-id="541:1160" data-name="资源 1 1">
+              <div className="absolute contents inset-0" data-node-id="541:1161" data-name="图层 1">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={img1} />
+              </div>
+            </div>
+          </div>
+          <div className="h-0 relative shrink-0 w-full" data-node-id="541:1169">
+            <div className="absolute inset-[-0.6px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine14} />
+            </div>
+          </div>
+          <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="541:1170">
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-[212px]" data-node-id="541:1171">
+              <p className="[word-break:break-word] font-['Barlow:Medium'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[12px] whitespace-nowrap" data-node-id="541:1172">
+                © 2026, MIKOLO US
+              </p>
+            </div>
+            <div className="content-stretch flex items-center justify-end overflow-clip relative shrink-0 w-[212px]" data-node-id="541:1173">
+              <p className="[word-break:break-word] font-['Barlow:Regular'] leading-[normal] not-italic relative shrink-0 text-[#8f8f8f] text-[12px] whitespace-nowrap" data-node-id="541:1174">
+                United States / English
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

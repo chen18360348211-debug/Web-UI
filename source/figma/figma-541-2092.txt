@@ -1,0 +1,17 @@
+const assetPathPrefix = "assets/figma/081f3a89-1f90-46ab-9ccf-cdbe1cf85201";
+const imgTab1Selected = `${assetPathPrefix}/ba1d0.svg`;
+
+export default function Component2() {
+  return (
+    <div className="content-stretch flex gap-[6.803px] items-center justify-center px-[19.048px] py-[13.605px] relative size-full" data-node-id="541:2092" data-name="按钮悬停态2">
+      <div className="absolute inset-[0_-0.87%_0.01%_-0.68%]" data-node-id="541:2093" data-name="tab-1-selected">
+        <div className="absolute inset-[-5.54%_-0.64%_-0.69%_-0.64%]">
+          <img alt="" className="block max-w-none size-full" src={imgTab1Selected} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#0f0f0f] text-[20px] text-center uppercase whitespace-nowrap" data-node-id="541:2099">
+        Add To Cart
+      </p>
+    </div>
+  );
+}

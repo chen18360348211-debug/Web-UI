@@ -1,0 +1,32 @@
+const assetPathPrefix = "assets/figma/618f766c-0076-43a1-8ed9-316cec61fb35";
+const imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1 = `${assetPathPrefix}/35ca3.png`;
+
+export default function Component() {
+  return (
+    <div className="border-[#fff1a0] border-[0.6px] border-solid content-stretch flex flex-col items-start px-[20px] py-[16px] relative size-full" data-node-id="541:3376" data-name="配件选购悬停态">
+      <div className="content-stretch flex gap-[18px] items-start relative shrink-0 w-full" data-node-id="541:3377">
+        <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="541:3378">
+          <div className="border-[#f0f0f0] border-[0.75px] border-solid relative rounded-[0.75px] shrink-0 size-[18px]" data-node-id="541:3379" />
+          <div className="bg-white overflow-clip relative shrink-0 size-[40px]" data-node-id="541:3380">
+            <div className="absolute left-0 size-[40px] top-0" data-node-id="541:3381" data-name="Black Mikolo leg press and hack squat machine with angled frame, 1">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBlackMikoloLegPressAndHackSquatMachineWithAngledFrame1} />
+            </div>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.3] relative shrink-0 w-[124px] whitespace-nowrap" data-node-id="541:3382">
+          <p className="font-['Barlow:Medium'] min-w-full not-italic overflow-hidden relative shrink-0 text-[14px] text-ellipsis text-white w-[min-content]" data-node-id="541:3383">
+            2-in-1 Leg Press Hack Squat Machine Combo DD10
+          </p>
+          <div className="content-stretch flex gap-[4px] items-end relative shrink-0 text-[12px]" data-node-id="541:3384">
+            <p className="font-['Barlow:Medium'] font-medium relative shrink-0 text-white" data-node-id="541:3385">
+              ＄749.99
+            </p>
+            <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Barlow:Regular'] font-normal line-through relative shrink-0 text-[#ccc]" data-node-id="541:3386">
+              ＄799.99
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,51 @@
+/* The original 388 × 598 Figma container remains the stable hover target. */
+[data-product-flip][data-flip-ready] {
+  perspective: 1400px;
+  z-index: 0;
+  /* Keep the returning card above its neighbors until the turn finishes. */
+  transition: z-index 650ms step-end;
+}
+
+[data-product-flip][data-flipped="true"] {
+  z-index: 1;
+  transition: none;
+}
+
+[data-product-flip] .product-card-turn {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  /* Visual perspective must not expand the original card's hover region. */
+  pointer-events: none;
+  rotate: y 0deg;
+  transition: rotate 650ms ease-in-out;
+}
+
+[data-product-flip][data-flipped="true"] .product-card-turn {
+  rotate: y 180deg;
+}
+
+[data-product-flip] .product-card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+[data-product-flip] .product-card-front {
+  rotate: y 0deg;
+}
+
+[data-product-flip] .product-card-back {
+  rotate: y 180deg;
+}
+
+[data-product-flip]:focus-visible {
+  outline: 2px solid #a7edd0;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-product-flip][data-flip-ready],
+  [data-product-flip] .product-card-turn { transition: none; }
+}

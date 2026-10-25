@@ -1,0 +1,15 @@
+const assetPathPrefix = "assets/figma/7eec6afd-30ab-4d36-9533-5527aca60aba";
+const imgPressStartToEnter = `${assetPathPrefix}/dc9b1.svg`;
+
+export default function PressStartToEnter() {
+  return (
+    <div className="content-stretch flex gap-[10px] items-center justify-center px-[37px] py-[10px] relative size-full" data-node-id="619:1667" data-name="PRESS START TO ENTER 悬停态">
+      <div className="absolute inset-[-0.65%_-0.13%]">
+        <img alt="" className="block max-w-none size-full" src={imgPressStartToEnter} />
+      </div>
+      <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#ebebeb] text-[24px] text-center uppercase whitespace-nowrap" data-node-id="619:1671">
+        PRESS START TO ENTER
+      </p>
+    </div>
+  );
+}

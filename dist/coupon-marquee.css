@@ -1,0 +1,107 @@
+/* Each strip clips both effects to its original Figma coupon row. */
+[data-coupon-marquee] {
+  --coupon-height: 172px;
+  --coupon-gap: 21px;
+}
+
+#vault-heading [data-coupon-marquee] {
+  --coupon-height: 234.872px;
+  --coupon-gap: 16px;
+}
+
+[data-coupon-marquee][data-ready] {
+  display: block;
+  height: var(--coupon-height);
+  overflow: clip;
+  contain: layout paint;
+  isolation: isolate;
+  cursor: pointer;
+  user-select: none;
+}
+
+[data-coupon-marquee] .coupon-track {
+  position: relative;
+  display: flex;
+  width: max-content;
+  height: var(--coupon-height);
+  gap: 0;
+  animation: coupon-loop 12s linear infinite;
+  animation-play-state: paused;
+}
+
+[data-coupon-marquee] .coupon-sequence {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: var(--coupon-gap);
+  padding-inline-end: var(--coupon-gap);
+  height: var(--coupon-height);
+}
+
+[data-coupon-marquee][data-playing="true"] .coupon-track {
+  animation-play-state: running;
+}
+
+/* The text and locks are below the white difference canvas. The original
+   green frame is painted above it so its Figma colors never invert. */
+[data-coupon-marquee] .coupon-content-track [data-coupon-outline] {
+  visibility: hidden;
+}
+
+[data-coupon-marquee] .coupon-outline-track {
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: 2;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+[data-coupon-marquee] .coupon-outline-track [data-coupon-outline] {
+  visibility: visible;
+}
+
+[data-coupon-marquee] .coupon-pixels {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+/* A keyboard-accessible pause control, shown on focus, uses the existing
+   Figma navigation button artwork. Hovering the coupons never pauses them. */
+[data-coupon-marquee] .coupon-pause {
+  position: absolute;
+  z-index: 3;
+  right: 8px;
+  top: 8px;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+[data-coupon-marquee] .coupon-pause:focus-visible {
+  width: 220px;
+  height: 46px;
+  clip-path: none;
+  overflow: visible;
+  background: url("assets/figma/fc7c9bd0-81cc-4bec-91c7-c9ae928e9d00/70d53.svg") center / 100% 100% no-repeat;
+  font: 24px "Jersey 10", sans-serif;
+  outline: 2px solid #a7edd0;
+  outline-offset: -2px;
+}
+
+@keyframes coupon-loop {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-coupon-marquee] .coupon-track { animation: none; }
+  [data-coupon-marquee] .coupon-pixels,
+  [data-coupon-marquee] .coupon-pause { display: none; }
+}

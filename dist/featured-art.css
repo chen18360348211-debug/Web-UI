@@ -1,0 +1,156 @@
+/* The user's two unmodified 3840 × 2160 PNGs share the 1920 × 1080 scene. */
+.featured-raster-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--page-background);
+}
+
+.featured-full-art,
+.featured-preview-art {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.featured-preview-window { display: none; }
+
+.featured-interaction-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  /* Static invisibility retains existing labels and full control hit areas.
+     Only the supplied PNGs paint the scene; neither image changes opacity. */
+  opacity: 0;
+}
+
+/* Original 541:2108 hover artwork at the full-size positions of 541:1987
+   and 541:2049. customize-motion.css hides it until the image is fully open. */
+.featured-shop-hover {
+  position: absolute;
+  top: 911.4px;
+  width: 528px;
+  height: 48px;
+  overflow: clip;
+  z-index: 2;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.featured-shop-hover[data-shop-hover="left"] { left: 364px; }
+.featured-shop-hover[data-shop-hover="right"] { left: 1054px; }
+
+.featured-shop-hover [data-source-node-id="541:2115"] {
+  width: 83px;
+  height: 26px;
+}
+
+.featured-raster-scene:has([data-shop-now="left"]:is(:hover, :focus-visible))
+  > .featured-shop-hover[data-shop-hover="left"],
+.featured-raster-scene:has([data-shop-now="right"]:is(:hover, :focus-visible))
+  > .featured-shop-hover[data-shop-hover="right"] {
+  visibility: visible;
+}
+
+/* Eight independent native checkboxes. The visual tiles reuse unchanged crops
+   of the supplied unchecked PNG; state artwork comes from Figma 541:1937/3376. */
+.package-options {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.package-option-group {
+  position: absolute;
+  top: 631px;
+  width: 528px;
+  height: 162.4px;
+  min-inline-size: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.package-option {
+  position: absolute;
+  display: block;
+  width: 257px;
+  overflow: clip;
+  cursor: pointer;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.package-option-input,
+.package-option-label-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.package-option-art {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 257px;
+  height: 74px;
+  transform-origin: 0 0;
+  scale: 1 var(--option-source-scale);
+  pointer-events: none;
+}
+
+.package-option-base {
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/uploads/package-thumbnail.png");
+  background-size: 1920px 1080px;
+  background-position: calc(-1 * var(--option-source-x)) calc(-1 * var(--option-source-y));
+}
+
+.package-option-check {
+  position: absolute;
+  left: 21px;
+  top: 28px;
+  display: none;
+  width: 18px;
+  height: 18px;
+  max-width: none;
+}
+
+.package-option::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.package-option:has(.package-option-input:checked)::after {
+  border: 1.6px solid transparent;
+  border-image: linear-gradient(to bottom, #fff1a0, #f5d264 45%, #c99b36) 1;
+}
+
+.package-option:has(.package-option-input:checked) .package-option-check {
+  display: block;
+}
+
+.package-option:not(:has(.package-option-input:checked)):is(:hover, :has(.package-option-input:focus-visible))::after {
+  border: .6px solid transparent;
+  border-image: linear-gradient(to bottom, #fff1a0, #f5d264 45%, #c99b36) 1;
+}
+
+.package-option:has(.package-option-input:focus-visible) {
+  outline: 2px solid #a7edd0;
+  outline-offset: 3px;
+}

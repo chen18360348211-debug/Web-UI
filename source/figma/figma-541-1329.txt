@@ -1,0 +1,117 @@
+const assetPathPrefix = "assets/figma/6e574b21-f296-4924-bad9-ba3bd413668c";
+const imgGroup7 = `${assetPathPrefix}/268ac.svg`;
+const imgClosedPixelLock = `${assetPathPrefix}/6a72d.svg`;
+const imgClosedPixelLock1 = `${assetPathPrefix}/fa680.svg`;
+
+export default function Frame427324307() {
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-start relative size-full" data-node-id="541:1329">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 text-white w-[1055px]" data-node-id="541:1330">
+        <p className="font-['Jersey_10:Regular'] leading-[normal] relative shrink-0 text-[80px] w-full" data-node-id="541:1331">{`NOT SURE HOW TO BUILD YOUR SETUP? `}</p>
+        <p className="font-['Barlow:Medium'] leading-[1.3] relative shrink-0 text-[26px] w-full" data-node-id="541:1332">
+          Get our best-selling packages at their lowest prices.
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[21px] items-center relative shrink-0 w-full" data-node-id="541:1333">
+        <div className="h-[172px] relative shrink-0 w-[383px]" data-node-id="541:1334">
+          <div className="absolute contents left-0 top-0" data-node-id="541:1335">
+            <div className="absolute inset-[-3.77%_-1.69%]">
+              <img alt="" className="block max-w-none size-full" src={imgGroup7} />
+            </div>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] left-[60px] not-italic text-[92px] text-[transparent] to-[#9ff7d4] top-[32px] whitespace-nowrap" data-node-id="541:1344">
+              20% OFF
+            </p>
+            <p className="[word-break:break-word] absolute font-['Jersey_10:Regular'] leading-[normal] left-[60px] not-italic text-[24px] text-white top-[19px] whitespace-nowrap" data-node-id="541:1345">
+              UP TO
+            </p>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] left-[60px] not-italic text-[26px] text-[transparent] to-[#c99b36] top-[119px] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:1346">
+              NOV 1–8
+            </p>
+          </div>
+          <div className="absolute contents inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1347" data-name="locked-status-icon">
+            <div className="absolute inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1348" data-name="closed-pixel-lock">
+              <div className="absolute inset-[-3.75%_-3.47%_-3.13%_-3.47%]">
+                <img alt="" className="block max-w-none size-full" src={imgClosedPixelLock} />
+              </div>
+            </div>
+            <div className="absolute inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1352" data-name="closed-pixel-lock">
+              <div className="absolute inset-[-3.75%_-3.47%_-3.13%_-3.47%]">
+                <img alt="" className="block max-w-none size-full" src={imgClosedPixelLock1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[172px] relative shrink-0 w-[383px]" data-node-id="541:1356">
+          <div className="absolute contents left-0 top-0" data-node-id="541:1357">
+            <div className="absolute inset-[-3.77%_-1.69%]">
+              <img alt="" className="block max-w-none size-full" src={imgGroup7} />
+            </div>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] left-[60px] not-italic text-[92px] text-[transparent] to-[#9ff7d4] top-[32px] whitespace-nowrap" data-node-id="541:1366">
+              22% OFF
+            </p>
+            <p className="[word-break:break-word] absolute font-['Jersey_10:Regular'] leading-[normal] left-[60px] not-italic text-[24px] text-white top-[19px] whitespace-nowrap" data-node-id="541:1367">
+              UP TO
+            </p>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] left-[60px] not-italic text-[26px] text-[transparent] to-[#c99b36] top-[119px] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:1368">
+              NOV 9–15
+            </p>
+          </div>
+          <div className="absolute contents inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1369" data-name="locked-status-icon">
+            <div className="absolute inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1370" data-name="closed-pixel-lock">
+              <div className="absolute inset-[-3.75%_-3.47%_-3.13%_-3.47%]">
+                <img alt="" className="block max-w-none size-full" src={imgClosedPixelLock} />
+              </div>
+            </div>
+            <div className="absolute inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1374" data-name="closed-pixel-lock">
+              <div className="absolute inset-[-3.75%_-3.47%_-3.13%_-3.47%]">
+                <img alt="" className="block max-w-none size-full" src={imgClosedPixelLock1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[172px] relative shrink-0 w-[383px]" data-node-id="541:1378">
+          <div className="absolute contents left-0 top-0" data-node-id="541:1379">
+            <div className="absolute inset-[-3.77%_-1.69%]">
+              <img alt="" className="block max-w-none size-full" src={imgGroup7} />
+            </div>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] left-[60px] not-italic text-[92px] text-[transparent] to-[#9ff7d4] top-[32px] whitespace-nowrap" data-node-id="541:1388">
+              23% OFF
+            </p>
+            <p className="[word-break:break-word] absolute font-['Jersey_10:Regular'] leading-[normal] left-[60px] not-italic text-[24px] text-white top-[19px] whitespace-nowrap" data-node-id="541:1389">
+              UP TO
+            </p>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] left-[60px] not-italic text-[26px] text-[transparent] to-[#c99b36] top-[119px] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:1390">{`NOV 16–24 `}</p>
+          </div>
+          <div className="absolute contents inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1391" data-name="locked-status-icon">
+            <div className="absolute inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1392" data-name="closed-pixel-lock">
+              <div className="absolute inset-[-3.75%_-3.47%_-3.13%_-3.47%]">
+                <img alt="" className="block max-w-none size-full" src={imgClosedPixelLock} />
+              </div>
+            </div>
+            <div className="absolute inset-[9.3%_7.36%_72.09%_85.12%]" data-node-id="541:1396" data-name="closed-pixel-lock">
+              <div className="absolute inset-[-3.75%_-3.47%_-3.13%_-3.47%]">
+                <img alt="" className="block max-w-none size-full" src={imgClosedPixelLock1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[172px] relative shrink-0 w-[383px]" data-node-id="541:1400">
+          <div className="absolute contents left-0 top-0" data-node-id="541:1401">
+            <div className="absolute inset-[-3.77%_-1.69%]">
+              <img alt="" className="block max-w-none size-full" src={imgGroup7} />
+            </div>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] left-[60px] not-italic text-[92px] text-[transparent] to-[#9ff7d4] top-[32px] whitespace-nowrap" data-node-id="541:1410">
+              25% OFF
+            </p>
+            <p className="[word-break:break-word] absolute font-['Jersey_10:Regular'] leading-[normal] left-[60px] not-italic text-[24px] text-white top-[19px] whitespace-nowrap" data-node-id="541:1411">
+              UP TO
+            </p>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] left-[60px] not-italic text-[26px] text-[transparent] to-[#c99b36] top-[119px] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:1412">
+              NOV 25-30
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

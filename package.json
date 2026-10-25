@@ -1,0 +1,7 @@
+{
+  "name": "mikolo-black-friday-pc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static desktop implementation of the MIKOLO Black Friday Figma frame",
+  "scripts": { "dev": "node scripts/serve.mjs", "start": "node scripts/serve.mjs", "test": "node scripts/countdown.test.mjs" }
+}

@@ -1,0 +1,59 @@
+const assetPathPrefix = "assets/figma/e2333368-587b-4338-a4dc-d6e46e51ddfc";
+const imgFrame = `${assetPathPrefix}/5beb9.svg`;
+const imgTab1Selected = `${assetPathPrefix}/cd0cb.svg`;
+const imgFrame427324265 = `${assetPathPrefix}/92cab.svg`;
+const imgFrame427324264 = `${assetPathPrefix}/11f4f.svg`;
+
+export default function Frame() {
+  return (
+    <div className="relative size-full" data-node-id="541:1215" data-name="Frame">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+      <div className="-translate-x-1/2 absolute content-stretch flex gap-[16px] items-end left-[calc(50%-0.24px)] top-[16px]" data-node-id="541:1220">
+        <div className="content-stretch flex gap-[8.163px] h-[46px] items-center justify-center overflow-clip px-[22.857px] py-[16.327px] relative shrink-0 w-[192px]" data-node-id="541:1221">
+          <div className="absolute inset-[0_-0.87%_0_-0.68%]" data-node-id="541:1222" data-name="tab-1-selected">
+            <div className="absolute inset-[-5.78%_-1.36%_-0.72%_-1.36%]">
+              <img alt="" className="block max-w-none size-full" src={imgTab1Selected} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#0f0f0f] text-[24px] text-center whitespace-nowrap" data-node-id="541:1228">
+            BLACK FRIDAY
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[10px] h-[46.531px] items-center justify-center px-[37px] py-[10px] relative shrink-0 w-[186.122px]" data-node-id="541:1229">
+          <div className="absolute inset-[-0.66%_-0.16%]">
+            <img alt="" className="block max-w-none size-full" src={imgFrame427324265} />
+          </div>
+          <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#ebebeb] text-[24px] text-center whitespace-nowrap" data-node-id="541:1233">
+            BEST SELLERS
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[10px] h-[46.531px] items-center justify-center px-[37px] py-[10px] relative shrink-0 w-[186.122px]" data-node-id="541:1234">
+          <div className="absolute inset-[-0.66%_-0.16%]">
+            <img alt="" className="block max-w-none size-full" src={imgFrame427324265} />
+          </div>
+          <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#ebebeb] text-[24px] text-center whitespace-nowrap" data-node-id="541:1238">
+            BUNDLE DEALS
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[10px] h-[46.531px] items-center justify-center px-[36px] py-[10px] relative shrink-0 w-[161.633px]" data-node-id="541:1239">
+          <div className="absolute inset-[-0.66%_-0.19%]">
+            <img alt="" className="block max-w-none size-full" src={imgFrame427324264} />
+          </div>
+          <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#ebebeb] text-[24px] text-center whitespace-nowrap" data-node-id="541:1243">
+            GIFT CARDS
+          </p>
+        </div>
+        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="541:1244">
+          <div className="col-1 content-stretch flex h-[46.531px] items-center justify-between ml-0 mt-0 px-[36px] py-[10px] relative row-1 w-[161.633px]" data-node-id="541:1245">
+            <div className="absolute inset-[-0.66%_-0.19%]">
+              <img alt="" className="block max-w-none size-full" src={imgFrame427324264} />
+            </div>
+            <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#ebebeb] text-[24px] text-center whitespace-nowrap" data-node-id="541:1249">
+              GIFT CARDS
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

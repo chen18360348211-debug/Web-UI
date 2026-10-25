@@ -1,0 +1,15 @@
+const assetPathPrefix = "assets/figma/ec99ad27-ee6d-472d-9a2b-4761ac35263e";
+const imgSeeMore = `${assetPathPrefix}/203f5.svg`;
+
+export default function SeeMore() {
+  return (
+    <div className="content-stretch flex gap-[10px] items-center justify-center px-[37px] py-[10px] relative size-full" data-node-id="610:1657" data-name="SEE MORE 悬停态">
+      <div className="absolute inset-[-0.67%_-0.16%]">
+        <img alt="" className="block max-w-none size-full" src={imgSeeMore} />
+      </div>
+      <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#ebebeb] text-[24px] text-center uppercase whitespace-nowrap" data-node-id="610:1661">
+        See More
+      </p>
+    </div>
+  );
+}

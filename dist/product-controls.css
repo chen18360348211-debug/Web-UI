@@ -1,0 +1,49 @@
+/* Figma 541:2092, 606:1649, 541:2124, 610:1657 and 619:1667. The original background slots
+   retain their export outsets; labels remain live HTML in the same position. */
+[data-product-cart] {
+  --control-hover-art: url("assets/figma/081f3a89-1f90-46ab-9ccf-cdbe1cf85201/ba1d0.svg");
+  /* Only the CTA can receive events inside the otherwise decorative 3D turn.
+     Its projection stays inside the stable 388 × 598 card hover boundary. */
+  pointer-events: auto;
+}
+
+[data-vault-tab="selected"] {
+  --control-hover-art: url("assets/figma/a40dd691-8d56-4f0f-98ef-8273b5bdd5ce/4be99.svg");
+}
+
+[data-vault-tab="unselected"] {
+  --control-hover-art: url("assets/figma/20abc727-8f1f-43e1-8f66-bdd70e715edc/69a1e.svg");
+}
+
+[data-see-more-hover] {
+  --control-hover-art: url("assets/figma/ec99ad27-ee6d-472d-9a2b-4761ac35263e/203f5.svg");
+}
+
+[data-bonus-enter-hover] {
+  --control-hover-art: url("assets/figma/7eec6afd-30ab-4d36-9533-5527aca60aba/dc9b1.svg");
+}
+
+:is([data-product-cart], [data-vault-tab="selected"]) > div > div::after,
+:is([data-vault-tab="unselected"], [data-see-more-hover], [data-bonus-enter-hover]) > div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--control-hover-art) center / 100% 100% no-repeat;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+:is([data-product-cart], [data-vault-tab="selected"]):is(:hover, :focus-visible) > div > div::after,
+:is([data-vault-tab="unselected"], [data-see-more-hover], [data-bonus-enter-hover]):is(:hover, :focus-visible) > div::after {
+  visibility: visible;
+}
+
+:is([data-product-cart], [data-vault-tab="selected"]):is(:hover, :focus-visible) > div > div > img,
+:is([data-vault-tab="unselected"], [data-see-more-hover], [data-bonus-enter-hover]):is(:hover, :focus-visible) > div > img {
+  visibility: hidden;
+}
+
+:is([data-vault-tab], [data-see-more-hover], [data-bonus-enter-hover]):focus-visible {
+  outline: 2px solid #a7edd0;
+  outline-offset: 4px;
+}

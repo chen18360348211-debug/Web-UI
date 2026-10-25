@@ -1,0 +1,65 @@
+/* Original Figma navigation hover artwork. Selected: 541:2116 / 541:2117.
+   This original background export already contains the 192 x 46 parent clip.
+   Text stays live HTML above the image. */
+#campaign-navigation [data-node-id="541:1221"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/figma/selected-hover-export/541-2117.png") center / 100% 100% no-repeat;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#campaign-navigation [data-node-id="541:1221"] > p {
+  z-index: 1;
+}
+
+#campaign-navigation :is(
+  [data-node-id="541:1229"],
+  [data-node-id="541:1234"],
+  [data-node-id="541:1239"],
+  [data-node-id="541:1245"]
+) > div {
+  --navigation-hover-artwork: url("assets/figma/fc7c9bd0-81cc-4bec-91c7-c9ae928e9d00/70d53.svg");
+}
+
+/* The overlay occupies the existing artwork slot exactly, including its
+   exported outsets. The shorter Gift Cards slots stretch the original SVG
+   horizontally, as enabled by the source asset's preserveAspectRatio. */
+#campaign-navigation :is(
+  [data-node-id="541:1229"],
+  [data-node-id="541:1234"],
+  [data-node-id="541:1239"],
+  [data-node-id="541:1245"]
+) > div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--navigation-hover-artwork) center / 100% 100% no-repeat;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#campaign-navigation [data-node-id="541:1221"]:is(:hover, :focus-visible)::after,
+#campaign-navigation :is(
+  [data-node-id="541:1229"],
+  [data-node-id="541:1234"],
+  [data-node-id="541:1239"],
+  [data-node-id="541:1245"]
+):is(:hover, :focus-visible) > div::after {
+  opacity: 1;
+}
+
+#campaign-navigation [data-node-id="541:1221"]:is(:hover, :focus-visible)
+  [data-node-id="541:1222"] img,
+#campaign-navigation :is(
+  [data-node-id="541:1229"],
+  [data-node-id="541:1234"],
+  [data-node-id="541:1239"],
+  [data-node-id="541:1245"]
+):is(:hover, :focus-visible) > div > img {
+  visibility: hidden;
+}
+
+/* Preserve the browser's focus outline; the Figma hover artwork is also
+   displayed for keyboard focus, without creating a click interaction. */

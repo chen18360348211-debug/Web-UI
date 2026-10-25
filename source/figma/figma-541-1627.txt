@@ -1,0 +1,58 @@
+const assetPathPrefix = "assets/figma/c28a0a4c-2f4d-4666-a49c-641784ce093f";
+const imgGroup10 = `${assetPathPrefix}/1c658.svg`;
+
+export default function Frame427324320() {
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-start relative size-full" data-node-id="541:1627">
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start not-italic relative shrink-0 text-white w-[1055px]" data-node-id="541:1628">
+        <p className="font-['Jersey_10:Regular'] leading-[normal] relative shrink-0 text-[80px] w-full" data-node-id="541:1629">
+          THE VAULT COLLECTION
+        </p>
+        <p className="font-['Barlow:Medium'] leading-[1.3] relative shrink-0 text-[26px] w-full" data-node-id="541:1630">
+          Find Your Fit. Unlock Your Deal.
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[16px] items-center relative shrink-0 w-full" data-node-id="541:1631">
+        <div className="h-[234.872px] relative shrink-0 w-[523px]" data-node-id="541:1632">
+          <div className="absolute contents left-0 top-0" data-node-id="541:1633">
+            <div className="absolute inset-[-3.77%_-1.69%]">
+              <img alt="" className="block max-w-none size-full" src={imgGroup10} />
+            </div>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] left-[81.93px] not-italic text-[125.629px] text-[transparent] to-[#9ff7d4] top-[35.87px] whitespace-nowrap" data-node-id="541:1642">
+              $110 OFF
+            </p>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] left-[81.93px] not-italic text-[35.504px] text-[transparent] to-[#c99b36] top-[154.67px] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:1643">
+              $1,000+
+            </p>
+          </div>
+        </div>
+        <div className="h-[234.872px] relative shrink-0 w-[523px]" data-node-id="541:1644">
+          <div className="absolute contents left-0 top-0" data-node-id="541:1645">
+            <div className="absolute inset-[-3.77%_-1.69%]">
+              <img alt="" className="block max-w-none size-full" src={imgGroup10} />
+            </div>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] left-[81.93px] not-italic text-[125.629px] text-[transparent] to-[#9ff7d4] top-[35.87px] whitespace-nowrap" data-node-id="541:1654">
+              $220 OFF
+            </p>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] left-[81.93px] not-italic text-[35.504px] text-[transparent] to-[#c99b36] top-[154.67px] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:1655">
+              $1,800+
+            </p>
+          </div>
+        </div>
+        <div className="h-[234.872px] relative shrink-0 w-[523px]" data-node-id="541:1656">
+          <div className="absolute contents left-0 top-0" data-node-id="541:1657">
+            <div className="absolute inset-[-3.77%_-1.69%]">
+              <img alt="" className="block max-w-none size-full" src={imgGroup10} />
+            </div>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Jersey_10:Regular'] from-[#f2fcf5] leading-[normal] left-[81.93px] not-italic text-[125.629px] text-[transparent] to-[#9ff7d4] top-[35.87px] whitespace-nowrap" data-node-id="541:1666">
+              $400 OFF
+            </p>
+            <p className="[word-break:break-word] absolute bg-clip-text bg-gradient-to-b font-['Barlow:Medium'] from-[#fff1a0] leading-[1.3] left-[81.93px] not-italic text-[35.504px] text-[transparent] to-[#c99b36] top-[154.67px] via-[#f5d264] via-[45%] whitespace-nowrap" data-node-id="541:1667">
+              $3,000+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

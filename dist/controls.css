@@ -1,0 +1,16 @@
+/* Apply the pointer to each full control/card container. Decorative artwork,
+   countdown values, headings and gaps keep their normal cursor. */
+#design-canvas :is(
+  [data-ui-control],
+  [data-product-card],
+  a[href],
+  button,
+  [role="button"],
+  select,
+  input[type="button"],
+  input[type="submit"],
+  input[type="checkbox"],
+  input[type="radio"]
+) {
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+const assetPathPrefix = "assets/figma/ac6d4c2e-ce62-4db6-9985-e92c4816f9fa";
+const imgTab1Selected = `${assetPathPrefix}/524a1.svg`;
+
+export default function Component() {
+  return (
+    <div className="content-stretch flex gap-[8.163px] items-center justify-center px-[22.857px] py-[16.327px] relative size-full" data-node-id="541:2108" data-name="按钮悬停态">
+      <div className="absolute inset-[0_-0.87%_0.01%_-0.68%]" data-node-id="541:2109" data-name="tab-1-selected">
+        <div className="absolute inset-[-5.54%_-0.5%_-0.69%_-0.5%]">
+          <img alt="" className="block max-w-none size-full" src={imgTab1Selected} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#0f0f0f] text-[24px] text-center whitespace-nowrap" data-node-id="541:2115">
+        SHOP NOW
+      </p>
+    </div>
+  );
+}

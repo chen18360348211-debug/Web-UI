@@ -1,0 +1,146 @@
+/* The two 1920x1080 sections keep their document positions.
+   The supplied product artwork grows from the exact thumbnail geometry;
+   it reaches its untransformed position as the intro leaves the viewport. */
+@supports (animation-timeline: view()) and (animation-range: entry) and (animation-range: 0% 100%) and (timeline-scope: --customize-exit) {
+  @media (prefers-reduced-motion: no-preference) {
+    #design-canvas { timeline-scope: --customize-exit; }
+    #customize {
+      view-timeline: --customize-exit block;
+      scroll-margin-top: max(0px, calc(var(--desktop-viewport-height, 1080px) - 1080px));
+    }
+    #customize [data-node-id="541:1320"] { overflow: visible; }
+    #customize [data-node-id="541:1321"] {
+      animation: customize-background-follow 1s linear both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+
+    #customize [data-node-id="541:1324"] {
+      z-index: 4;
+      pointer-events: none;
+      animation: customize-title-left 1s linear both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+    #customize [data-node-id="541:1322"] {
+      z-index: 2;
+      pointer-events: none;
+      animation: customize-title-right 1s linear both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+    #customize [data-node-id="541:1325"] {
+      z-index: 2;
+      pointer-events: none;
+      animation: customize-description-out 1s linear both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+    #customize [data-node-id="541:1323"] {
+      /* The moving scene supplies the same uploaded thumbnail from frame one. */
+      visibility: hidden;
+    }
+    #featured-packages {
+      z-index: 3;
+      opacity: 1;
+      transform-origin: 960px 540px;
+      will-change: translate, rotate, scale;
+      /* Linear placement cancels document scrolling. Only zoom and rotation
+         ease in/out, keeping the center steady and the endpoints gentle. */
+      animation:
+        customize-live-position 1s linear both,
+        customize-live-zoom 1s cubic-bezier(.42, 0, .58, 1) both,
+        customize-live-corners 1s linear both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+    #featured-packages .featured-preview-window {
+      position: absolute;
+      inset: 0;
+      display: block;
+      pointer-events: none;
+      /* Reveal the opaque full image only in the final part of the zoom.
+         This spatial handoff avoids any image-opacity animation or hard cut. */
+      animation: customize-art-reveal 1s linear both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+    #featured-packages .featured-preview-art {
+      /* The perimeter is painted once by ::after, independently of the art. */
+      clip-path: path("M88 3H1832V88H1917V992H1832V1077H88V992H3V88H88Z");
+    }
+    #featured-packages .featured-shop-hover {
+      /* The hover state is available only after the main image is fully open.
+         The thumbnail and its zoom/rotation never display button hover art. */
+      animation: customize-shop-hover-ready 1s steps(1, end) both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+    #featured-packages .package-options {
+      animation: customize-option-controls-ready 1s steps(1, end) both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+    #featured-packages::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      /* Isolate the supplied thumbnail's own stepped perimeter. */
+      background: url("assets/uploads/package-thumbnail.png") center / 100% 100% no-repeat;
+      clip-path: path(evenodd, "M0 0H1920V1080H0Z M88 3H1832V88H1917V992H1832V1077H88V992H3V88H88Z");
+      animation: customize-outline-out 1s linear both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
+  }
+}
+
+@keyframes customize-title-left {
+  0% { translate: 0 0; opacity: 1; }
+  65%, 100% { translate: -1100px 0; opacity: 0; }
+}
+@keyframes customize-title-right {
+  0% { translate: 0 0; opacity: 1; }
+  65%, 100% { translate: 1300px 0; opacity: 0; }
+}
+@keyframes customize-description-out {
+  0% { translate: 0 0; opacity: 1; }
+  40%, 100% { translate: -100px 0; opacity: 0; }
+}
+@keyframes customize-live-position {
+  from { translate: 229.745px -1129.6405px; }
+  to { translate: 0 0; }
+}
+@keyframes customize-live-zoom {
+  from { rotate: 10deg; scale: .209534375; }
+  to { rotate: 0deg; scale: 1; }
+}
+@keyframes customize-live-corners {
+  0%, 88% {
+    clip-path: polygon(85px 0,1835px 0,1835px 85px,1920px 85px,1920px 995px,1835px 995px,1835px 1080px,85px 1080px,85px 995px,0 995px,0 85px,85px 85px);
+  }
+  100% {
+    clip-path: polygon(0 0,1920px 0,1920px 0,1920px 0,1920px 1080px,1920px 1080px,1920px 1080px,0 1080px,0 1080px,0 1080px,0 0,0 0);
+  }
+}
+@keyframes customize-background-follow {
+  from { translate: 0 0; }
+  to { translate: 0 1080px; }
+}
+@keyframes customize-outline-out {
+  0%, 88% { opacity: 1; }
+  99.5%, 100% { opacity: 0; }
+}
+@keyframes customize-art-reveal {
+  0%, 88% { clip-path: inset(0); }
+  99.5%, 100% { clip-path: inset(50%); }
+}
+@keyframes customize-shop-hover-ready {
+  from { clip-path: inset(50%); }
+  to { clip-path: inset(0); }
+}
+@keyframes customize-option-controls-ready {
+  from { visibility: hidden; }
+  to { visibility: visible; }
+}

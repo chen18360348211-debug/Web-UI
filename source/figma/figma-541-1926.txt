@@ -1,0 +1,15 @@
+const assetPathPrefix = "assets/figma/102eab2d-24e5-4d67-bbab-6289ec3e6182";
+const imgFrame427324265 = `${assetPathPrefix}/bce01.svg`;
+
+export default function Frame427324265() {
+  return (
+    <div className="content-stretch flex gap-[10px] items-center justify-center px-[37px] py-[10px] relative size-full" data-node-id="541:1926">
+      <div className="absolute inset-[-0.67%_-0.16%]">
+        <img alt="" className="block max-w-none size-full" src={imgFrame427324265} />
+      </div>
+      <p className="[word-break:break-word] font-['Jersey_10:Regular'] leading-[normal] not-italic relative shrink-0 text-[#ebebeb] text-[24px] text-center uppercase whitespace-nowrap" data-node-id="541:1930">
+        See More
+      </p>
+    </div>
+  );
+}
