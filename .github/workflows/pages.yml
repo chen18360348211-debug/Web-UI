@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -23,20 +23,6 @@ jobs:
     steps:
       - name: Check out website
         uses: actions/checkout@v6
-      - name: Import the verified performance update
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release download performance-20261026 --repo "$GITHUB_REPOSITORY" --pattern "mikolo-performance-update.zip" --dir "$RUNNER_TEMP"
-          echo "85db1d363e91fc00a03662c9276bad0768dce852e2f56d81dcf620e18fc06347  $RUNNER_TEMP/mikolo-performance-update.zip" | sha256sum --check
-          unzip -q -o "$RUNNER_TEMP/mikolo-performance-update.zip" -d "$GITHUB_WORKSPACE"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md dist scripts source
-          if ! git diff --cached --quiet; then
-            git commit -m "Optimize responsive images and deferred media delivery"
-            git push origin HEAD:main
-          fi
       - name: Verify countdown
         run: node scripts/countdown.test.mjs
       - name: Configure GitHub Pages
