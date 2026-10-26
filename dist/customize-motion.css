@@ -87,7 +87,7 @@
       inset: 0;
       pointer-events: none;
       /* Isolate the supplied thumbnail's own stepped perimeter. */
-      background: url("assets/uploads/package-thumbnail.png") center / 100% 100% no-repeat;
+      background: var(--package-thumbnail-art, none) center / 100% 100% no-repeat;
       clip-path: path(evenodd, "M0 0H1920V1080H0Z M88 3H1832V88H1917V992H1832V1077H88V992H3V88H88Z");
       animation: customize-outline-out 1s linear both;
       animation-timeline: --customize-exit;

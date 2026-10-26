@@ -114,7 +114,7 @@
 .package-option-base {
   position: absolute;
   inset: 0;
-  background-image: url("assets/uploads/package-thumbnail.png");
+  background-image: var(--package-thumbnail-art, none);
   background-size: 1920px 1080px;
   background-position: calc(-1 * var(--option-source-x)) calc(-1 * var(--option-source-y));
 }

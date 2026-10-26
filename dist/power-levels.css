@@ -36,7 +36,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: url("assets/figma/power-level-white/551-3475.png") center / 100% 100% no-repeat;
+      background: url("assets/optimized/551-3475-05b27b4cb99f-1920.webp") center / 100% 100% no-repeat;
       animation: power-white-finish 1s steps(1, end) both;
       animation-timeline: --power-levels;
       animation-range: entry 88.7% entry 89.5%;

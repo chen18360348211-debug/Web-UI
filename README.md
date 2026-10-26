@@ -68,4 +68,8 @@ PRESS START TO ENTER 点击后平滑滚回完全展开的主推产品画面，�
 
 倒计时边界校验：`node scripts/countdown.test.mjs`。
 
+2026-10-26 素材交付优化：保留原始 PNG/视频归档，网页通过 WebP `picture/srcset/sizes` 使用按屏幕尺寸编码的版本；像素小图无损，主推文字图使用高质量编码。首屏图片优先加载，屏幕外图片原生懒加载；视频与海报接近视口再加载，循环视频采用 H.264/faststart。14 份样式按原级联顺序合并为 `dist/site.css`，主推缩放、卡片入场、配件多选和所有悬停钩子保持原样。
+
+重新生成页面后，先用装有 Pillow/WebP 的 Python 运行 `scripts/optimize_images.py`，再运行 `scripts/optimize_delivery.py`；后者可重复运行，重新生成资源引用与合并样式。日常修改 CSS 后也需再运行交付脚本，保持 `site.css` 同步。
+
 已按用户授权安装并读取额外技能：Google Chrome 官方 [Modern Web Guidance](https://github.com/GoogleChrome/modern-web-guidance/tree/main/skills/modern-web-guidance)，以及 Addy Osmani 的 [Frontend UI Engineering](https://github.com/addyosmani/agent-skills/tree/main/skills/frontend-ui-engineering)。已检查字体排版指引；涉及通用重排的建议服从本次 Figma 精确还原要求。

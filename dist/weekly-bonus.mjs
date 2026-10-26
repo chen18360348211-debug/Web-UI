@@ -10,7 +10,7 @@ if (video) {
       video.pause();
       return;
     }
-    // Avoid fetching a below-fold 18 MB loop until it approaches the viewport,
+    // Avoid fetching the below-fold loop until it approaches the viewport,
     // including on browsers without native loading="lazy" media support.
     if (!video.getAttribute('src')) {
       video.src = video.dataset.src;
@@ -20,6 +20,12 @@ if (video) {
   }
 
   if (reducedMotion.matches) video.removeAttribute('autoplay');
+  const posterObserver = new IntersectionObserver((entries) => {
+    if (!entries[0].isIntersecting) return;
+    video.poster = video.dataset.poster;
+    posterObserver.disconnect();
+  }, { rootMargin: '900px 0px' });
+  posterObserver.observe(video);
   const observer = new IntersectionObserver((entries) => {
     nearViewport = entries[0].isIntersecting;
     syncPlayback();

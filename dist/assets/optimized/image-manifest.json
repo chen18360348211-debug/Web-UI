@@ -1,0 +1,665 @@
+{
+  "version": 1,
+  "format": "webp",
+  "summary": {
+    "originalFiles": 21,
+    "uniqueImages": 18,
+    "originalBytes": 129060728,
+    "uniqueOriginalBytes": 108667452,
+    "allDerivativeBytes": 14331510,
+    "uniqueDefaultBytes": 3535026
+  },
+  "images": {
+    "assets/figma/035434bf-97e2-4712-b723-0014bf749b65/55950.png": {
+      "original": "assets/figma/035434bf-97e2-4712-b723-0014bf749b65/55950.png",
+      "originalBytes": 11484022,
+      "sha256": "306715b2aec835cdf6fe948213a171eb4b08d2273ecacc38eb72651167004501",
+      "width": 3840,
+      "height": 2160,
+      "alpha": true,
+      "category": "text-scene",
+      "quality": 95,
+      "lossless": false,
+      "default": "assets/optimized/55950-306715b2aec8-1920.webp",
+      "srcset": "assets/optimized/55950-306715b2aec8-960.webp 960w, assets/optimized/55950-306715b2aec8-1920.webp 1920w, assets/optimized/55950-306715b2aec8-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/55950-306715b2aec8-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 124388
+        },
+        {
+          "path": "assets/optimized/55950-306715b2aec8-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 393788
+        },
+        {
+          "path": "assets/optimized/55950-306715b2aec8-3840.webp",
+          "width": 3840,
+          "height": 2160,
+          "bytes": 1169182
+        }
+      ]
+    },
+    "assets/figma/72e642b0-3b1e-4074-8734-3ec57f3fdac3/55950.png": {
+      "original": "assets/figma/72e642b0-3b1e-4074-8734-3ec57f3fdac3/55950.png",
+      "originalBytes": 11484022,
+      "sha256": "306715b2aec835cdf6fe948213a171eb4b08d2273ecacc38eb72651167004501",
+      "width": 3840,
+      "height": 2160,
+      "alpha": true,
+      "category": "text-scene",
+      "quality": 95,
+      "lossless": false,
+      "default": "assets/optimized/55950-306715b2aec8-1920.webp",
+      "srcset": "assets/optimized/55950-306715b2aec8-960.webp 960w, assets/optimized/55950-306715b2aec8-1920.webp 1920w, assets/optimized/55950-306715b2aec8-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/55950-306715b2aec8-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 124388
+        },
+        {
+          "path": "assets/optimized/55950-306715b2aec8-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 393788
+        },
+        {
+          "path": "assets/optimized/55950-306715b2aec8-3840.webp",
+          "width": 3840,
+          "height": 2160,
+          "bytes": 1169182
+        }
+      ]
+    },
+    "assets/figma/035434bf-97e2-4712-b723-0014bf749b65/62355.png": {
+      "original": "assets/figma/035434bf-97e2-4712-b723-0014bf749b65/62355.png",
+      "originalBytes": 10623660,
+      "sha256": "ff6323ec627fd34233c9117ab5674fe354956d37863369eec5aded4e01590257",
+      "width": 3840,
+      "height": 1920,
+      "alpha": false,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/62355-ff6323ec627f-1920.webp",
+      "srcset": "assets/optimized/62355-ff6323ec627f-960.webp 960w, assets/optimized/62355-ff6323ec627f-1920.webp 1920w, assets/optimized/62355-ff6323ec627f-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/62355-ff6323ec627f-960.webp",
+          "width": 960,
+          "height": 480,
+          "bytes": 71500
+        },
+        {
+          "path": "assets/optimized/62355-ff6323ec627f-1920.webp",
+          "width": 1920,
+          "height": 960,
+          "bytes": 245406
+        },
+        {
+          "path": "assets/optimized/62355-ff6323ec627f-3840.webp",
+          "width": 3840,
+          "height": 1920,
+          "bytes": 694958
+        }
+      ]
+    },
+    "assets/figma/402ab444-ff2a-4a10-ba78-5d21fbc7adb4/db768.png": {
+      "original": "assets/figma/402ab444-ff2a-4a10-ba78-5d21fbc7adb4/db768.png",
+      "originalBytes": 4454627,
+      "sha256": "c846c8a82414c1ee6de121a89134cc2dedda0bee8b90b10856392e29dd3520ca",
+      "width": 2500,
+      "height": 2500,
+      "alpha": true,
+      "category": "product",
+      "quality": 92,
+      "lossless": false,
+      "default": "assets/optimized/db768-c846c8a82414-800.webp",
+      "srcset": "assets/optimized/db768-c846c8a82414-400.webp 400w, assets/optimized/db768-c846c8a82414-800.webp 800w, assets/optimized/db768-c846c8a82414-2500.webp 2500w",
+      "variants": [
+        {
+          "path": "assets/optimized/db768-c846c8a82414-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 51426
+        },
+        {
+          "path": "assets/optimized/db768-c846c8a82414-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 136234
+        },
+        {
+          "path": "assets/optimized/db768-c846c8a82414-2500.webp",
+          "width": 2500,
+          "height": 2500,
+          "bytes": 678474
+        }
+      ]
+    },
+    "assets/figma/813b12bb-d058-4563-87da-71db694fb59e/db768.png": {
+      "original": "assets/figma/813b12bb-d058-4563-87da-71db694fb59e/db768.png",
+      "originalBytes": 4454627,
+      "sha256": "c846c8a82414c1ee6de121a89134cc2dedda0bee8b90b10856392e29dd3520ca",
+      "width": 2500,
+      "height": 2500,
+      "alpha": true,
+      "category": "product",
+      "quality": 92,
+      "lossless": false,
+      "default": "assets/optimized/db768-c846c8a82414-800.webp",
+      "srcset": "assets/optimized/db768-c846c8a82414-400.webp 400w, assets/optimized/db768-c846c8a82414-800.webp 800w, assets/optimized/db768-c846c8a82414-2500.webp 2500w",
+      "variants": [
+        {
+          "path": "assets/optimized/db768-c846c8a82414-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 51426
+        },
+        {
+          "path": "assets/optimized/db768-c846c8a82414-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 136234
+        },
+        {
+          "path": "assets/optimized/db768-c846c8a82414-2500.webp",
+          "width": 2500,
+          "height": 2500,
+          "bytes": 678474
+        }
+      ]
+    },
+    "assets/figma/be852b79-4bb8-4381-8f3f-d3d2247729a1/db768.png": {
+      "original": "assets/figma/be852b79-4bb8-4381-8f3f-d3d2247729a1/db768.png",
+      "originalBytes": 4454627,
+      "sha256": "c846c8a82414c1ee6de121a89134cc2dedda0bee8b90b10856392e29dd3520ca",
+      "width": 2500,
+      "height": 2500,
+      "alpha": true,
+      "category": "product",
+      "quality": 92,
+      "lossless": false,
+      "default": "assets/optimized/db768-c846c8a82414-800.webp",
+      "srcset": "assets/optimized/db768-c846c8a82414-400.webp 400w, assets/optimized/db768-c846c8a82414-800.webp 800w, assets/optimized/db768-c846c8a82414-2500.webp 2500w",
+      "variants": [
+        {
+          "path": "assets/optimized/db768-c846c8a82414-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 51426
+        },
+        {
+          "path": "assets/optimized/db768-c846c8a82414-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 136234
+        },
+        {
+          "path": "assets/optimized/db768-c846c8a82414-2500.webp",
+          "width": 2500,
+          "height": 2500,
+          "bytes": 678474
+        }
+      ]
+    },
+    "assets/figma/618f766c-0076-43a1-8ed9-316cec61fb35/35ca3.png": {
+      "original": "assets/figma/618f766c-0076-43a1-8ed9-316cec61fb35/35ca3.png",
+      "originalBytes": 231950,
+      "sha256": "e0e38e778aa5e0269f77c3dc64f160ae8504995e40faf7fbf528307c5115874d",
+      "width": 2000,
+      "height": 2000,
+      "alpha": false,
+      "category": "product",
+      "quality": 92,
+      "lossless": false,
+      "default": "assets/optimized/35ca3-e0e38e778aa5-800.webp",
+      "srcset": "assets/optimized/35ca3-e0e38e778aa5-400.webp 400w, assets/optimized/35ca3-e0e38e778aa5-800.webp 800w, assets/optimized/35ca3-e0e38e778aa5-2000.webp 2000w",
+      "variants": [
+        {
+          "path": "assets/optimized/35ca3-e0e38e778aa5-400.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 15538
+        },
+        {
+          "path": "assets/optimized/35ca3-e0e38e778aa5-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 44756
+        },
+        {
+          "path": "assets/optimized/35ca3-e0e38e778aa5-2000.webp",
+          "width": 2000,
+          "height": 2000,
+          "bytes": 276460
+        }
+      ]
+    },
+    "assets/figma/618f766c-0076-43a1-8ed9-316cec61fb35/ffdf1.png": {
+      "original": "assets/figma/618f766c-0076-43a1-8ed9-316cec61fb35/ffdf1.png",
+      "originalBytes": 12084798,
+      "sha256": "9d17ee0ef9b5da880fa47fd17e309af7668a03d32c2260e0f4ff822e8b79de4b",
+      "width": 3840,
+      "height": 2168,
+      "alpha": false,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/ffdf1-9d17ee0ef9b5-1920.webp",
+      "srcset": "assets/optimized/ffdf1-9d17ee0ef9b5-960.webp 960w, assets/optimized/ffdf1-9d17ee0ef9b5-1920.webp 1920w, assets/optimized/ffdf1-9d17ee0ef9b5-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/ffdf1-9d17ee0ef9b5-960.webp",
+          "width": 960,
+          "height": 542,
+          "bytes": 75232
+        },
+        {
+          "path": "assets/optimized/ffdf1-9d17ee0ef9b5-1920.webp",
+          "width": 1920,
+          "height": 1084,
+          "bytes": 236028
+        },
+        {
+          "path": "assets/optimized/ffdf1-9d17ee0ef9b5-3840.webp",
+          "width": 3840,
+          "height": 2168,
+          "bytes": 690712
+        }
+      ]
+    },
+    "assets/figma/6296b8bd-893a-405b-b716-6f0f8ee0d9cb/29d83.png": {
+      "original": "assets/figma/6296b8bd-893a-405b-b716-6f0f8ee0d9cb/29d83.png",
+      "originalBytes": 4921874,
+      "sha256": "88302eebd541202e8693589301ba65444abeb6837838e8c43b66d00f6c504808",
+      "width": 3840,
+      "height": 999,
+      "alpha": false,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/29d83-88302eebd541-1920.webp",
+      "srcset": "assets/optimized/29d83-88302eebd541-960.webp 960w, assets/optimized/29d83-88302eebd541-1920.webp 1920w, assets/optimized/29d83-88302eebd541-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/29d83-88302eebd541-960.webp",
+          "width": 960,
+          "height": 250,
+          "bytes": 39278
+        },
+        {
+          "path": "assets/optimized/29d83-88302eebd541-1920.webp",
+          "width": 1920,
+          "height": 500,
+          "bytes": 118762
+        },
+        {
+          "path": "assets/optimized/29d83-88302eebd541-3840.webp",
+          "width": 3840,
+          "height": 999,
+          "bytes": 277502
+        }
+      ]
+    },
+    "assets/figma/6296b8bd-893a-405b-b716-6f0f8ee0d9cb/854dc.png": {
+      "original": "assets/figma/6296b8bd-893a-405b-b716-6f0f8ee0d9cb/854dc.png",
+      "originalBytes": 3385310,
+      "sha256": "3ed0f4cd2f343f862089edc59e897e6c992f79610ba20daa58033999dfc0bad3",
+      "width": 4096,
+      "height": 1372,
+      "alpha": true,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/854dc-3ed0f4cd2f34-1920.webp",
+      "srcset": "assets/optimized/854dc-3ed0f4cd2f34-960.webp 960w, assets/optimized/854dc-3ed0f4cd2f34-1920.webp 1920w, assets/optimized/854dc-3ed0f4cd2f34-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/854dc-3ed0f4cd2f34-960.webp",
+          "width": 960,
+          "height": 322,
+          "bytes": 59826
+        },
+        {
+          "path": "assets/optimized/854dc-3ed0f4cd2f34-1920.webp",
+          "width": 1920,
+          "height": 643,
+          "bytes": 160736
+        },
+        {
+          "path": "assets/optimized/854dc-3ed0f4cd2f34-3840.webp",
+          "width": 3840,
+          "height": 1286,
+          "bytes": 395694
+        }
+      ]
+    },
+    "assets/figma/6296b8bd-893a-405b-b716-6f0f8ee0d9cb/e7d9e.png": {
+      "original": "assets/figma/6296b8bd-893a-405b-b716-6f0f8ee0d9cb/e7d9e.png",
+      "originalBytes": 12122478,
+      "sha256": "90df917fcc9cfa8c58ce3f341b9f478fed1d9857afdbdce62826c1817badf873",
+      "width": 3840,
+      "height": 2408,
+      "alpha": true,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/e7d9e-90df917fcc9c-1920.webp",
+      "srcset": "assets/optimized/e7d9e-90df917fcc9c-960.webp 960w, assets/optimized/e7d9e-90df917fcc9c-1920.webp 1920w, assets/optimized/e7d9e-90df917fcc9c-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/e7d9e-90df917fcc9c-960.webp",
+          "width": 960,
+          "height": 602,
+          "bytes": 87432
+        },
+        {
+          "path": "assets/optimized/e7d9e-90df917fcc9c-1920.webp",
+          "width": 1920,
+          "height": 1204,
+          "bytes": 312590
+        },
+        {
+          "path": "assets/optimized/e7d9e-90df917fcc9c-3840.webp",
+          "width": 3840,
+          "height": 2408,
+          "bytes": 959342
+        }
+      ]
+    },
+    "assets/figma/72e642b0-3b1e-4074-8734-3ec57f3fdac3/83d9e.png": {
+      "original": "assets/figma/72e642b0-3b1e-4074-8734-3ec57f3fdac3/83d9e.png",
+      "originalBytes": 4669719,
+      "sha256": "78154dd921d54e5915c4ec15ebdb3ab39dac88ac8821472891942c81c94d39f7",
+      "width": 3840,
+      "height": 2160,
+      "alpha": false,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/83d9e-78154dd921d5-1920.webp",
+      "srcset": "assets/optimized/83d9e-78154dd921d5-960.webp 960w, assets/optimized/83d9e-78154dd921d5-1920.webp 1920w, assets/optimized/83d9e-78154dd921d5-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/83d9e-78154dd921d5-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 71656
+        },
+        {
+          "path": "assets/optimized/83d9e-78154dd921d5-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 219224
+        },
+        {
+          "path": "assets/optimized/83d9e-78154dd921d5-3840.webp",
+          "width": 3840,
+          "height": 2160,
+          "bytes": 524498
+        }
+      ]
+    },
+    "assets/figma/8fe1bc74-0402-4d6c-9aab-fd0bb785e3cc/b848f.png": {
+      "original": "assets/figma/8fe1bc74-0402-4d6c-9aab-fd0bb785e3cc/b848f.png",
+      "originalBytes": 9432639,
+      "sha256": "14126775b27991151904efde5b41bba9aab4279b25552051f1c0ef5c77dd0ae6",
+      "width": 3840,
+      "height": 1600,
+      "alpha": false,
+      "category": "text-scene",
+      "quality": 95,
+      "lossless": false,
+      "default": "assets/optimized/b848f-14126775b279-1920.webp",
+      "srcset": "assets/optimized/b848f-14126775b279-960.webp 960w, assets/optimized/b848f-14126775b279-1920.webp 1920w, assets/optimized/b848f-14126775b279-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/b848f-14126775b279-960.webp",
+          "width": 960,
+          "height": 400,
+          "bytes": 129208
+        },
+        {
+          "path": "assets/optimized/b848f-14126775b279-1920.webp",
+          "width": 1920,
+          "height": 800,
+          "bytes": 398466
+        },
+        {
+          "path": "assets/optimized/b848f-14126775b279-3840.webp",
+          "width": 3840,
+          "height": 1600,
+          "bytes": 1179764
+        }
+      ]
+    },
+    "assets/figma/d11078bc-451f-4290-af94-a19b856a3430/310bd.png": {
+      "original": "assets/figma/d11078bc-451f-4290-af94-a19b856a3430/310bd.png",
+      "originalBytes": 2602876,
+      "sha256": "21fce0065f5f5e04ca5ca19cff206c085c645bde21554a5f77d24ff3be24dc43",
+      "width": 1774,
+      "height": 887,
+      "alpha": false,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/310bd-21fce0065f5f-1774.webp",
+      "srcset": "assets/optimized/310bd-21fce0065f5f-960.webp 960w, assets/optimized/310bd-21fce0065f5f-1774.webp 1774w",
+      "variants": [
+        {
+          "path": "assets/optimized/310bd-21fce0065f5f-960.webp",
+          "width": 960,
+          "height": 480,
+          "bytes": 99680
+        },
+        {
+          "path": "assets/optimized/310bd-21fce0065f5f-1774.webp",
+          "width": 1774,
+          "height": 887,
+          "bytes": 239110
+        }
+      ]
+    },
+    "assets/figma/d11078bc-451f-4290-af94-a19b856a3430/4c963.png": {
+      "original": "assets/figma/d11078bc-451f-4290-af94-a19b856a3430/4c963.png",
+      "originalBytes": 388132,
+      "sha256": "c9d8f6184a2d0aec926b65b567eef14176662b92e5f655dd1539109d4f880c40",
+      "width": 2048,
+      "height": 148,
+      "alpha": true,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/4c963-c9d8f6184a2d-1920.webp",
+      "srcset": "assets/optimized/4c963-c9d8f6184a2d-960.webp 960w, assets/optimized/4c963-c9d8f6184a2d-1920.webp 1920w, assets/optimized/4c963-c9d8f6184a2d-2048.webp 2048w",
+      "variants": [
+        {
+          "path": "assets/optimized/4c963-c9d8f6184a2d-960.webp",
+          "width": 960,
+          "height": 69,
+          "bytes": 20756
+        },
+        {
+          "path": "assets/optimized/4c963-c9d8f6184a2d-1920.webp",
+          "width": 1920,
+          "height": 139,
+          "bytes": 58088
+        },
+        {
+          "path": "assets/optimized/4c963-c9d8f6184a2d-2048.webp",
+          "width": 2048,
+          "height": 148,
+          "bytes": 58646
+        }
+      ]
+    },
+    "assets/figma/d11078bc-451f-4290-af94-a19b856a3430/65260.png": {
+      "original": "assets/figma/d11078bc-451f-4290-af94-a19b856a3430/65260.png",
+      "originalBytes": 29359,
+      "sha256": "0b1a0f83e8be6e0859b8c15abb9a06070faf14fc5659b7be63428c6a14348881",
+      "width": 1024,
+      "height": 96,
+      "alpha": true,
+      "category": "pixel-ui",
+      "quality": 100,
+      "lossless": true,
+      "default": "assets/optimized/65260-0b1a0f83e8be-1024.webp",
+      "srcset": "assets/optimized/65260-0b1a0f83e8be-1024.webp 1024w",
+      "variants": [
+        {
+          "path": "assets/optimized/65260-0b1a0f83e8be-1024.webp",
+          "width": 1024,
+          "height": 96,
+          "bytes": 14142
+        }
+      ]
+    },
+    "assets/figma/d11078bc-451f-4290-af94-a19b856a3430/de98c.png": {
+      "original": "assets/figma/d11078bc-451f-4290-af94-a19b856a3430/de98c.png",
+      "originalBytes": 9000677,
+      "sha256": "cecbb943e9f2fd1b550c21d26f6b6f392fd65af42890611939e758bb2d18a546",
+      "width": 3840,
+      "height": 1898,
+      "alpha": false,
+      "category": "scene",
+      "quality": 90,
+      "lossless": false,
+      "default": "assets/optimized/de98c-cecbb943e9f2-1920.webp",
+      "srcset": "assets/optimized/de98c-cecbb943e9f2-960.webp 960w, assets/optimized/de98c-cecbb943e9f2-1920.webp 1920w, assets/optimized/de98c-cecbb943e9f2-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/de98c-cecbb943e9f2-960.webp",
+          "width": 960,
+          "height": 474,
+          "bytes": 58222
+        },
+        {
+          "path": "assets/optimized/de98c-cecbb943e9f2-1920.webp",
+          "width": 1920,
+          "height": 949,
+          "bytes": 152860
+        },
+        {
+          "path": "assets/optimized/de98c-cecbb943e9f2-3840.webp",
+          "width": 3840,
+          "height": 1898,
+          "bytes": 379150
+        }
+      ]
+    },
+    "assets/figma/power-level-white/551-3475.png": {
+      "original": "assets/figma/power-level-white/551-3475.png",
+      "originalBytes": 9076,
+      "sha256": "05b27b4cb99f66ea2590ab7d55f7dc075646d5cdf35a783248d55aa661975510",
+      "width": 1920,
+      "height": 925,
+      "alpha": false,
+      "category": "pixel-ui",
+      "quality": 100,
+      "lossless": true,
+      "default": "assets/optimized/551-3475-05b27b4cb99f-1920.webp",
+      "srcset": "assets/optimized/551-3475-05b27b4cb99f-1920.webp 1920w",
+      "variants": [
+        {
+          "path": "assets/optimized/551-3475-05b27b4cb99f-1920.webp",
+          "width": 1920,
+          "height": 925,
+          "bytes": 120
+        }
+      ]
+    },
+    "assets/figma/selected-hover-export/541-2117.png": {
+      "original": "assets/figma/selected-hover-export/541-2117.png",
+      "originalBytes": 6980,
+      "sha256": "054a92291b6f1442ce62fa538d14845f59854b5f6b8c2c5bea355c9080a36861",
+      "width": 192,
+      "height": 46,
+      "alpha": false,
+      "category": "pixel-ui",
+      "quality": 100,
+      "lossless": true,
+      "default": "assets/optimized/541-2117-054a92291b6f-192.webp",
+      "srcset": "assets/optimized/541-2117-054a92291b6f-192.webp 192w",
+      "variants": [
+        {
+          "path": "assets/optimized/541-2117-054a92291b6f-192.webp",
+          "width": 192,
+          "height": 46,
+          "bytes": 4094
+        }
+      ]
+    },
+    "assets/uploads/package-full.png": {
+      "original": "assets/uploads/package-full.png",
+      "originalBytes": 11651888,
+      "sha256": "11678de04b20895679aba67158270f98a1f3724768c759ccb60b3fd8a9992242",
+      "width": 3840,
+      "height": 2160,
+      "alpha": false,
+      "category": "text-scene",
+      "quality": 95,
+      "lossless": false,
+      "default": "assets/optimized/package-full-11678de04b20-1920.webp",
+      "srcset": "assets/optimized/package-full-11678de04b20-960.webp 960w, assets/optimized/package-full-11678de04b20-1920.webp 1920w, assets/optimized/package-full-11678de04b20-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/package-full-11678de04b20-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 125098
+        },
+        {
+          "path": "assets/optimized/package-full-11678de04b20-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 406204
+        },
+        {
+          "path": "assets/optimized/package-full-11678de04b20-3840.webp",
+          "width": 3840,
+          "height": 2160,
+          "bytes": 1197804
+        }
+      ]
+    },
+    "assets/uploads/package-thumbnail.png": {
+      "original": "assets/uploads/package-thumbnail.png",
+      "originalBytes": 11567387,
+      "sha256": "159ca9bbebbe775160cc3a4b3914bc63f1d260f361ce6eafcdd945797684eddc",
+      "width": 3840,
+      "height": 2160,
+      "alpha": true,
+      "category": "text-scene",
+      "quality": 95,
+      "lossless": false,
+      "default": "assets/optimized/package-thumbnail-159ca9bbebbe-1920.webp",
+      "srcset": "assets/optimized/package-thumbnail-159ca9bbebbe-960.webp 960w, assets/optimized/package-thumbnail-159ca9bbebbe-1920.webp 1920w, assets/optimized/package-thumbnail-159ca9bbebbe-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/package-thumbnail-159ca9bbebbe-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 124732
+        },
+        {
+          "path": "assets/optimized/package-thumbnail-159ca9bbebbe-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 394418
+        },
+        {
+          "path": "assets/optimized/package-thumbnail-159ca9bbebbe-3840.webp",
+          "width": 3840,
+          "height": 2160,
+          "bytes": 1160326
+        }
+      ]
+    }
+  }
+}
