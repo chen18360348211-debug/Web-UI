@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -23,20 +23,6 @@ jobs:
     steps:
       - name: Check out website
         uses: actions/checkout@v6
-      - name: Import verified November artwork
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release download artwork-20261119 --repo "$GITHUB_REPOSITORY" --pattern "mikolo-november-art.zip" --dir "$RUNNER_TEMP"
-          echo "467c12a2173ea3f671a590f9d48cbd98830c6a7566608b31abce06bbe2c02b57  $RUNNER_TEMP/mikolo-november-art.zip" | sha256sum --check
-          unzip -q -o "$RUNNER_TEMP/mikolo-november-art.zip" -d "$GITHUB_WORKSPACE"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md dist scripts source
-          if ! git diff --cached --quiet; then
-            git commit -m "Replace November artwork and preserve shopping cards and pixel outline"
-            git push origin HEAD:main
-          fi
       - name: Verify countdown
         run: node scripts/countdown.test.mjs
       - name: Configure GitHub Pages
