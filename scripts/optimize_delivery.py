@@ -13,6 +13,11 @@ import re
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / 'dist'
 IMAGES = json.loads((DIST / 'assets/optimized/image-manifest.json').read_text())['images']
+NOVEMBER_MANIFEST = DIST / 'assets/optimized/november-art-manifest.json'
+if NOVEMBER_MANIFEST.exists():
+    IMAGES.update(json.loads(NOVEMBER_MANIFEST.read_text())['images'])
+HERO_IMAGE = 'assets/uploads/hero-20261119.png'
+FEATURED_BACKGROUND = 'assets/uploads/package-background-20261119.jpg'
 CSS_FILES = ['fonts.css', 'styles.css', 'hover.css', 'controls.css', 'power-levels.css',
              'featured-art.css', 'customize-motion.css', 'weekly-bonus.css',
              'coupon-marquee.css', 'product-flip.css', 'product-controls.css',
@@ -45,7 +50,13 @@ class PageImages(HTMLParser):
                 replacement = set_attr(raw, 'data-thumbnail-art', THUMBNAIL)
         if name == 'picture':
             self.picture += 1
+        if name == 'source' and self.section == 'black-friday':
+            replacement = set_attr(raw, 'srcset', IMAGES[HERO_IMAGE]['srcset'])
         if name == 'img':
+            if self.section == 'black-friday':
+                raw = set_attr(raw, 'src', HERO_IMAGE)
+                raw = set_attr(raw, 'alt', 'Black Friday. Up to 30% off. Gift card savings plus up to 2X points. Nov 2–Nov 30.')
+                attrs['src'] = HERO_IMAGE
             initial = self.section in ('announcement', 'main-navigation', 'black-friday', 'campaign-navigation')
             replacement = set_attr(raw, 'decoding', 'async')
             replacement = set_attr(replacement, 'loading', 'eager' if initial else 'lazy')
@@ -69,10 +80,11 @@ class PageImages(HTMLParser):
             replacement = re.sub(r'\s(?:data-)?poster="[^"]*"', '', replacement)
             replacement = set_attr(replacement, 'data-poster', IMAGES['assets/figma/d11078bc-451f-4290-af94-a19b856a3430/de98c.png']['default'])
             replacement = set_attr(replacement, 'preload', 'none')
-        if replacement != raw:
+        original_tag = self.get_starttag_text()
+        if replacement != original_tag:
             line, column = self.getpos()
             start = self.lines[line - 1] + column
-            self.changes.append((start, start + len(raw), replacement))
+            self.changes.append((start, start + len(original_tag), replacement))
 
     handle_startendtag = handle_starttag
 
@@ -89,6 +101,52 @@ parser.feed(page)
 for start, end, replacement in reversed(parser.changes):
     page = page[:start] + replacement + page[end:]
 
+# The new Banner includes its own copy; avoid painting the old live line twice.
+page = page.replace('NOV 1 – NOV 30', 'NOV 2 – NOV 30')
+background = IMAGES[FEATURED_BACKGROUND]
+def background_picture(class_name, sizes):
+    return (f'<picture style="display:contents"><source type="image/webp" srcset="{background["srcset"]}" sizes="{sizes}">'
+            f'<img class="{class_name}" src="{FEATURED_BACKGROUND}" width="3840" height="2160" '
+            'alt="" decoding="async" loading="lazy"></picture>')
+if 'class="featured-background-art"' not in page:
+    page = page.replace('<div class="featured-raster-scene">', '<div class="featured-raster-scene">' + background_picture('featured-background-art', '100vw'))
+if 'class="featured-mini-background"' not in page:
+    page = page.replace('<div class="f94" data-name="Frame 427324301 1">', '<div class="f94" data-name="Frame 427324301 1">' + background_picture('featured-mini-background', '23vw'))
+if 'id="featured-preserved-cards"' not in page:
+    definitions = ('<svg width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs>'
+                   '<clipPath id="featured-preserved-cards" clipPathUnits="objectBoundingBox">'
+                   '<rect x="0.177083333333" y="0.555555555556" width="0.3" height="0.365740740741"/>'
+                   '<rect x="0.536458333333" y="0.555555555556" width="0.3" height="0.365740740741"/>'
+                   '</clipPath></defs></svg>')
+    page = page.replace('<main id="design-canvas" aria-label="MIKOLO Black Friday">', '<main id="design-canvas" aria-label="MIKOLO Black Friday">' + definitions)
+page = page.replace('y="0.488888888889" width="0.3" height="0.432407407407"', 'y="0.555555555556" width="0.3" height="0.365740740741"')
+panels = '<div class="featured-card-panels" aria-hidden="true"><span></span><span></span></div>'
+if page.count('class="featured-card-panels"') < 2:
+    page = page.replace('<div class="featured-raster-scene">', '<div class="featured-raster-scene">' + panels)
+    page = page.replace('<div class="f94" data-name="Frame 427324301 1">', '<div class="f94" data-name="Frame 427324301 1">' + panels)
+    # Place backgrounds below the transparent panel gradients in paint order.
+    for name in ('featured-background-art', 'featured-mini-background'):
+        pattern = r'(<div class="(?:featured-raster-scene|f94)"[^>]*>)(' + re.escape(panels) + r')(<picture[^>]*><source[^>]*><img class="' + name + r'"[^>]*></picture>)'
+        page = re.sub(pattern, r'\1\3\2', page)
+if 'id="featured-mini-frame"' not in page:
+    frame = ('<clipPath id="featured-mini-frame" clipPathUnits="objectBoundingBox">'
+             '<path clip-rule="evenodd" fill-rule="evenodd" d="M0 0H1V1H0Z '
+             'M.045833333 .002777778H.954166667V.081481481H.9984375V.918518519H.954166667V.997222222H.045833333V.918518519H.0015625V.081481481H.045833333Z"/>'
+             '</clipPath>')
+    page = page.replace('</clipPath></defs></svg>', '</clipPath>' + frame + '</defs></svg>', 1)
+if 'class="featured-mini-outline"' not in page:
+    thumb = IMAGES['assets/uploads/package-thumbnail.png']
+    outline = (f'<picture style="display:contents"><source type="image/webp" srcset="{thumb["srcset"]}" sizes="23vw">'
+               '<img class="featured-mini-outline" src="assets/uploads/package-thumbnail.png" alt="" '
+               'width="3840" height="2160" loading="lazy" decoding="async"></picture>')
+    mini_bg = background_picture('featured-mini-background', '23vw')
+    page = page.replace(mini_bg, mini_bg + outline)
+frame_svg = ('<svg class="featured-frame-art" viewBox="0 0 1920 1080" preserveAspectRatio="none" aria-hidden="true">'
+             '<path d="M87 2H1833V87H1918V993H1833V1078H87V993H2V87H87Z"/></svg>')
+if page.count('class="featured-frame-art"') < 2:
+    page = page.replace('<div class="featured-raster-scene">', '<div class="featured-raster-scene">' + frame_svg)
+    page = page.replace('<div class="f94" data-name="Frame 427324301 1">', '<div class="f94" data-name="Frame 427324301 1">' + frame_svg)
+
 # The artwork stays in its original CSS slot; only the bytes it references change.
 for name in CSS_FILES:
     text = (DIST / name).read_text(encoding='utf-8')
@@ -104,7 +162,7 @@ bundle = '\n'.join(f'/* {name} */\n' + (DIST / name).read_text(encoding='utf-8')
 (DIST / 'site.css').write_text(bundle, encoding='utf-8', newline='\n')
 page = re.sub(r'<link rel="stylesheet" href="(?:' + '|'.join(re.escape(n) for n in CSS_FILES + ['site.css']) + r')(?:\?[^\"]*)?">\s*', '', page)
 page = re.sub(r'<!-- delivery hints -->.*?<!-- /delivery hints -->\s*', '', page, flags=re.S)
-hero = IMAGES['assets/figma/8fe1bc74-0402-4d6c-9aab-fd0bb785e3cc/b848f.png']
+hero = IMAGES[HERO_IMAGE]
 css_version = hashlib.sha256(bundle.encode()).hexdigest()[:12]
 hints = f'''<!-- delivery hints -->
 <link rel="preload" as="image" type="image/webp" href="{hero['default']}" imagesrcset="{hero['srcset']}" imagesizes="100vw" fetchpriority="high">

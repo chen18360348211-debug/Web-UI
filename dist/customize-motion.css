@@ -66,8 +66,9 @@
       animation-range: exit 0% exit 100%;
     }
     #featured-packages .featured-preview-art {
-      /* The perimeter is painted once by ::after, independently of the art. */
-      clip-path: path("M88 3H1832V88H1917V992H1832V1077H88V992H3V88H88Z");
+      /* Preserve the shopping cards; the new scene remains below both faces.
+         The perimeter is still painted independently by ::after. */
+      clip-path: url("#featured-preserved-cards");
     }
     #featured-packages .featured-shop-hover {
       /* The hover state is available only after the main image is fully open.
@@ -81,13 +82,19 @@
       animation-timeline: --customize-exit;
       animation-range: exit 0% exit 100%;
     }
+    #featured-packages .featured-frame-art {
+      display: block;
+      animation: customize-outline-out 1s linear both;
+      animation-timeline: --customize-exit;
+      animation-range: exit 0% exit 100%;
+    }
     #featured-packages::after {
       content: "";
       position: absolute;
       inset: 0;
       pointer-events: none;
       /* Isolate the supplied thumbnail's own stepped perimeter. */
-      background: var(--package-thumbnail-art, none) center / 100% 100% no-repeat;
+      background: none;
       clip-path: path(evenodd, "M0 0H1920V1080H0Z M88 3H1832V88H1917V992H1832V1077H88V992H3V88H88Z");
       animation: customize-outline-out 1s linear both;
       animation-timeline: --customize-exit;

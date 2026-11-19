@@ -72,4 +72,6 @@ PRESS START TO ENTER 点击后平滑滚回完全展开的主推产品画面，�
 
 重新生成页面后，先用装有 Pillow/WebP 的 Python 运行 `scripts/optimize_images.py`，再运行 `scripts/optimize_delivery.py`；后者可重复运行，重新生成资源引用与合并样式。日常修改 CSS 后也需再运行交付脚本，保持 `site.css` 同步。
 
+2026-11-19 按用户提供素材更新 Banner（NOV 2–NOV 30）及主推背景。主推缩略图、放大过程、满屏画面共用新场景；选购卡片正文保留原素材，独立叠放在新场景上，旧器械平台不再叠入卡片。像素描边采用独立 SVG，沿用 88%–99.5% 的收尾淡出，静态缩略图同样保留边框。新原图在 `dist/assets/uploads/`，响应式 WebP 映射由 `scripts/prepare_november_art.py` 生成到 `november-art-manifest.json`，交付脚本优先读取该映射。
+
 已按用户授权安装并读取额外技能：Google Chrome 官方 [Modern Web Guidance](https://github.com/GoogleChrome/modern-web-guidance/tree/main/skills/modern-web-guidance)，以及 Addy Osmani 的 [Frontend UI Engineering](https://github.com/addyosmani/agent-skills/tree/main/skills/frontend-ui-engineering)。已检查字体排版指引；涉及通用重排的建议服从本次 Figma 精确还原要求。

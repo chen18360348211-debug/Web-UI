@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "format": "webp",
+  "images": {
+    "assets/uploads/hero-20261119.png": {
+      "original": "assets/uploads/hero-20261119.png",
+      "originalBytes": 11079464,
+      "sha256": "4fbf21181e0b712c26f68c6f81643974169489eeb477b9062d149ed96c2300ff",
+      "width": 3840,
+      "height": 1600,
+      "alpha": false,
+      "category": "text-scene",
+      "quality": 95,
+      "lossless": false,
+      "default": "assets/optimized/hero-20261119-4fbf21181e0b-1920.webp",
+      "srcset": "assets/optimized/hero-20261119-4fbf21181e0b-960.webp 960w, assets/optimized/hero-20261119-4fbf21181e0b-1920.webp 1920w, assets/optimized/hero-20261119-4fbf21181e0b-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/hero-20261119-4fbf21181e0b-960.webp",
+          "width": 960,
+          "height": 400,
+          "bytes": 136362
+        },
+        {
+          "path": "assets/optimized/hero-20261119-4fbf21181e0b-1920.webp",
+          "width": 1920,
+          "height": 800,
+          "bytes": 445680
+        },
+        {
+          "path": "assets/optimized/hero-20261119-4fbf21181e0b-3840.webp",
+          "width": 3840,
+          "height": 1600,
+          "bytes": 1686038
+        }
+      ]
+    },
+    "assets/uploads/package-background-20261119.jpg": {
+      "original": "assets/uploads/package-background-20261119.jpg",
+      "originalBytes": 6206500,
+      "sha256": "c8063f216a862e046687f4e8e2ddc6732f8e93cf57b26a643481f7de8d4e4b1d",
+      "width": 3840,
+      "height": 2160,
+      "alpha": false,
+      "category": "scene",
+      "quality": 95,
+      "lossless": false,
+      "default": "assets/optimized/package-background-20261119-c8063f216a86-1920.webp",
+      "srcset": "assets/optimized/package-background-20261119-c8063f216a86-960.webp 960w, assets/optimized/package-background-20261119-c8063f216a86-1920.webp 1920w, assets/optimized/package-background-20261119-c8063f216a86-3840.webp 3840w",
+      "variants": [
+        {
+          "path": "assets/optimized/package-background-20261119-c8063f216a86-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 107218
+        },
+        {
+          "path": "assets/optimized/package-background-20261119-c8063f216a86-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 335908
+        },
+        {
+          "path": "assets/optimized/package-background-20261119-c8063f216a86-3840.webp",
+          "width": 3840,
+          "height": 2160,
+          "bytes": 986612
+        }
+      ]
+    }
+  }
+}
