@@ -119,7 +119,12 @@ if 'id="featured-preserved-cards"' not in page:
                    '<rect x="0.536458333333" y="0.555555555556" width="0.3" height="0.365740740741"/>'
                    '</clipPath></defs></svg>')
     page = page.replace('<main id="design-canvas" aria-label="MIKOLO Black Friday">', '<main id="design-canvas" aria-label="MIKOLO Black Friday">' + definitions)
-page = page.replace('y="0.488888888889" width="0.3" height="0.432407407407"', 'y="0.555555555556" width="0.3" height="0.365740740741"')
+# Exclude the old raster stroke so it cannot flatten the vector opacity gradient.
+page = re.sub(
+    r'(<clipPath id="featured-preserved-cards"[^>]*>).*?(</clipPath>)',
+    r'\1<rect x="0.178125" y="0.555555555556" width="0.297916666667" height="0.363888888889"/>'
+    r'<rect x="0.5375" y="0.555555555556" width="0.297916666667" height="0.363888888889"/>\2',
+    page, flags=re.S)
 panels = '<div class="featured-card-panels" aria-hidden="true"><span></span><span></span></div>'
 if page.count('class="featured-card-panels"') < 2:
     page = page.replace('<div class="featured-raster-scene">', '<div class="featured-raster-scene">' + panels)
@@ -128,6 +133,54 @@ if page.count('class="featured-card-panels"') < 2:
     for name in ('featured-background-art', 'featured-mini-background'):
         pattern = r'(<div class="(?:featured-raster-scene|f94)"[^>]*>)(' + re.escape(panels) + r')(<picture[^>]*><source[^>]*><img class="' + name + r'"[^>]*></picture>)'
         page = re.sub(pattern, r'\1\3\2', page)
+
+
+def card_frame(prefix):
+    # Exact gradients from the supplied Frame 427324291.svg. Preserve the
+    # existing card dimensions while mapping the original 576 x 500 viewBox.
+    return (
+        '<svg class="featured-card-frame-art" width="576" height="500" '
+        'viewBox="0 0 576 500" preserveAspectRatio="none" fill="none" aria-hidden="true">'
+        f'<rect x="0.5" y="0.5" width="575" height="499" fill="url(#{prefix}-fill)"/>'
+        f'<rect x="0.5" y="0.5" width="575" height="499" stroke="url(#{prefix}-stroke)"/>'
+        f'<defs><linearGradient id="{prefix}-fill" x1="288" y1="500" x2="288" y2="0" gradientUnits="userSpaceOnUse">'
+        '<stop/><stop offset="1" stop-opacity="0"/></linearGradient>'
+        f'<linearGradient id="{prefix}-stroke" x1="288" y1="0" x2="288" y2="500" gradientUnits="userSpaceOnUse">'
+        '<stop stop-color="#A7EDD0" stop-opacity="0"/><stop offset="1" stop-color="#A7EDD0"/>'
+        '</linearGradient></defs></svg>')
+
+
+panel_number = 0
+
+
+def replace_card_panels(match):
+    global panel_number
+    panel_number += 1
+    return ('<div class="featured-card-panels" aria-hidden="true">'
+            f'<span>{card_frame(f"featured-card-{panel_number}-left")}</span>'
+            f'<span>{card_frame(f"featured-card-{panel_number}-right")}</span></div>')
+
+
+page = re.sub(r'<div class="featured-card-panels" aria-hidden="true">.*?</div>',
+              replace_card_panels, page, flags=re.S)
+page = re.sub(r'<style id="featured-card-edge-fix">.*?</style>\s*', '', page, flags=re.S)
+card_style = '''<style id="featured-card-edge-fix">
+/* The supplied SVG provides a continuous transparent-to-mint outer stroke. */
+:is(#featured-packages, #customize) .featured-card-panels > span {
+  background: none;
+  border: 0;
+  border-image: none;
+  clip-path: none;
+}
+.featured-card-frame-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+</style>
+'''
+page = page.replace('</head>', card_style + '</head>')
 if 'id="featured-mini-frame"' not in page:
     frame = ('<clipPath id="featured-mini-frame" clipPathUnits="objectBoundingBox">'
              '<path clip-rule="evenodd" fill-rule="evenodd" d="M0 0H1V1H0Z '
